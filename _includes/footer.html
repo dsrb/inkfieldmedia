@@ -1,3 +1,51 @@
+        <footer class="footer">
+            <div class="row">
+                <div class="col-25">
+                    <h3>Menu</h3>
+                    <ul class="footer-list">
+                        {% assign sorted_pages = site.pages | sort:"position" %}
+                        {% for page in sorted_pages %}
+                            {% if page.menu == 'main' %}
+                                <li class="footer-list-item">
+                                    <a href="{{ page.url }}">{{ page.title }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-25">
+                    <h3>Info</h3>
+                    <ul class="footer-list">
+                        <li class="footer-list-item"><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                        <li class="footer-list-item"><a href="tel:+{{ site.mobile }}">{{ site.mobile }}</a></li>
+                        <li class="footer-list-item">{{ site.address-line-1 }}</li>
+                        <li class="footer-list-item">{{ site.address-line-2 }}</li>
+                        <li class="footer-list-item">{{ site.address-line-3 }}</li>
+                    </ul>
+                </div>
+                <div class="col-50">
+                    <h3>Menu</h3>
+                    <form class="newsletter-form" action="http://dsrbranding.createsend.com/t/i/s/mykmy/" method="post" id="subForm">
+                            <label for="fieldName">Full Name</label>
+                            <input  placeholder="Enter your name..." id="fieldName" name="cm-name" type="text" />
+                            <label for="fieldEmail">Email Address</label>
+                            <input placeholder="Enter your email..." id="fieldEmail" name="cm-mykmy-mykmy" type="email" required />
+                            <button type="submit">Subscribe</button>
+                        </p>
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="footer-copyright">
+                <div class="row">
+                    <p class="footer-copyright-text">© INKFIELDMEDIA 2017</p>
+                </div>
+            </div>
+        </footer>
+
+
+
+
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script src="/scripts/all.min.js"></script>
 
