@@ -554,11 +554,27 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
   padding: 0 3.4rem; }
 
+.header-video {
+  height: 40vh; }
+
 .header {
-  padding: 0.7em;
-  margin: 0 auto;
   background-color: #eee;
-  text-align: center; }
+  padding: 0.8em 0 0.2em 0; }
+
+.header-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.header-list-item {
+  display: inline-block;
+  margin: 0 1.2em 0 0;
+  padding: 0; }
+  .header-list-item:after {
+    content: " \2022";
+    color: #888;
+    margin: 0 0 0 1.2em;
+    font-weight: 400; }
 
 .footer {
   position: relative; }

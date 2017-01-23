@@ -3,6 +3,7 @@
 @import "fonts";
 
 $grey: #eee;
+$coal: #888;
 $black: #000;
 
 // Layout
@@ -33,11 +34,33 @@ h1, h2, h3, h4, h5 {
 
 // Header //
 
+.header-video {
+    height: 40vh;
+}
+
 .header {
-    padding: 0.7em;
-    margin: 0 auto;
     background-color: $grey;
-    text-align: center;
+    padding: 0.8em 0 0.2em 0;
+}
+
+.header-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.header-list-item {
+    display: inline-block;
+    margin: 0 1.2em 0 0;
+    padding: 0;
+
+    &:after {
+        content: " \2022";
+        color: $coal;
+        margin: 0 0 0 1.2em;
+        font-weight: 400;
+    }
+
 }
 
 // Footer //
@@ -55,6 +78,8 @@ h1, h2, h3, h4, h5 {
 .footer-list-item {
     padding: 0 0 0.4em 0;
 }
+
+// Other //
 
 .clearfix {
     clear: both;
