@@ -24,12 +24,20 @@ h1, h2, h3, h4, h5 {
     text-transform: uppercase;
 }
 
+img {
+    width: 100%;
+}
+
 // Content //
 
 .container {
     max-width: 80em;
     margin: 0 auto;
     padding: 0 3.4rem;
+}
+
+.content-work {
+    padding: 5em 0;
 }
 
 // Header //
@@ -40,7 +48,7 @@ h1, h2, h3, h4, h5 {
 
 .header {
     background-color: $grey;
-    padding: 0.8em 0 0.2em 0;
+    padding: 0.8em 0 0 0;
 }
 
 .header-list {
@@ -138,6 +146,7 @@ h1, h2, h3, h4, h5 {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    overflow: auto;
 
     &:before, &:after {
         -webkit-box-sizing: border-box;
@@ -148,15 +157,16 @@ h1, h2, h3, h4, h5 {
 }
 
 .row {
+    margin: 0 -0.8em;
 
-    img {
-        width: 100%;
-    }
+        img {
+            width: 100%;
+        }
 
-    &:before, &:after {
-        content: " ";
-        display: table;
-    }
+        &:before, &:after {
+            content: " ";
+            display: table;
+        }
 
 }
 
@@ -166,7 +176,7 @@ h1, h2, h3, h4, h5 {
 
 .col-20, .col-25, .col-50, .col-60, .col-75, .col-100 {
     float: left;
-    padding: 0;
+    padding: 0 0.8em;
 }
 
 .col-20 {

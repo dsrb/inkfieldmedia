@@ -1,6 +1,4 @@
 ---
 title: title
-layout: default
+layout: work
 ---
-
-Hello
