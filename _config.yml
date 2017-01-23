@@ -1,18 +1,19 @@
+---
 title: Inkfield Media
 timezone: UTC
 collections:
+  clients:
+    title: Clients
+    output: true
+    permalink: work
   posts:
     title: Posts
-    output: false
+    output: true
   uploads:
     title: Uploads
     output: false
   work:
     title: Work
-    output: true
-    permalink: work
-  clients:
-    title: Clients
     output: true
     permalink: work
 defaults:
@@ -42,11 +43,11 @@ defaults:
     permalink: "/clients/:title/"
     link: 
     layout: post
-    logo_image:
+    logo_image: 
 email: info@inkfieldmedia.com
-mobile: +44 7587 977 848
+mobile: "+44 7587 977 848"
 baseurl: 
-description:
+description: 
 permalink: pretty
 markdown: redcarpet
 highlighter: pygments
