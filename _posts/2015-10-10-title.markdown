@@ -1,8 +1,0 @@
----
-title: title
-date: 2015-10-10 00:00:00 Z
-categories:
-- project
-layout: post
----
-
