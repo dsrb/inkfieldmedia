@@ -34,8 +34,7 @@ defaults:
     link: 
     layout: post
     thumbnail_image:
-    - 
-    other_image: 
+    video-number:
 - scope:
     path: ''
     type: clients
