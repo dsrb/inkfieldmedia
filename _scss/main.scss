@@ -5,10 +5,12 @@
 $grey: #eee;
 $coal: #888;
 $black: #000;
+$white: #fff;
 
 // Layout
 
 body {
+    background-color: $white;
     font-family: 'Calibre', sans-serif;
     font-size: 1.2rem;
     letter-spacing: 0.02em;
@@ -36,15 +38,38 @@ img {
     padding: 0 3.4rem;
 }
 
+.content-site {
+    background-color: #fff;
+}
+
 .content-work {
     padding: 5em 0;
 }
 
-// Header //
+// Video //
+
+.header-video-container {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50vh;
+    text-align: center;
+}
 
 .header-video {
-    height: 40vh;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
 }
+
+// Header //
 
 .header {
     background-color: $grey;
@@ -75,6 +100,7 @@ img {
 
 .footer {
     position: relative;
+    background-color: #fff;
 }
 
 .footer-list {

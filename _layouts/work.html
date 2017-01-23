@@ -2,14 +2,16 @@
 layout: default
 ---
 
-    <div class="content-work">
+    <div class="container">
         <div class="row">
-            {% assign sorted_work = site.work | sort:"position" %}
-            {% for work in sorted_work %}
-                <div class="col-50">
-                    <img src="{{ work.thumbnail_image }}">
-                    <h2><a href="{{ work.url }}">{{ work.title }}</a></h2>
-                </div>
-            {% endfor %}
+            <div class="content-work">
+                {% assign sorted_work = site.work | sort:"position" %}
+                {% for work in sorted_work %}
+                    <div class="col-50">
+                        <img src="{{ work.thumbnail_image }}">
+                        <h2><a href="{{ work.url }}">{{ work.title }}</a></h2>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
     </div>

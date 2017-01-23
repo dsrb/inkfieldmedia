@@ -11,27 +11,25 @@
     </head>
     <body>
 
-        <div class="header-video">
+        <div class="header-video-container">
+            <video class="header-video">
+                <source src="/uploads/video.mp4" type="video/mp4"  autoplay muted loop>
+            </video>
             <h1>Insert Header Video</h1>
         </div>
 
         <header class="header">
             <div class="container">
-                <div class="row">
-                    <ul class="header-list">
-                        <li class="header-list-item site-title">
-                            <a href="{{ site.baseurl }}">{{ site.title }}</a>
-                        </li>
-                        {% assign sorted_pages = site.pages | sort:"position" %}
-                        {% for page in sorted_pages %}
-                            {% if page.menu == 'main' %}
-                                <li class="header-list-item"><a href="{{ page.url }}">{{ page.title }}</a></li>
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
-                </div>
+                <ul class="header-list">
+                    <li class="header-list-item site-title">
+                        <a href="{{ site.baseurl }}">{{ site.title }}</a>
+                    </li>
+                    {% assign sorted_pages = site.pages | sort:"position" %}
+                    {% for page in sorted_pages %}
+                        {% if page.menu == 'main' %}
+                            <li class="header-list-item"><a href="{{ page.url }}">{{ page.title }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
             </div>
         </header>
-
-        <main class="container">
-            
