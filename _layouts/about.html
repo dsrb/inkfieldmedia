@@ -29,8 +29,8 @@ layout: default
                     <h2>Services</h2>
                 </div>
                 <div class="col-50">
-                    {% for service in page.service limit: 15 %}
-                        {{ service }}
+                    {% for service in page.services limit: 15 %}
+                        <p>{{ service }}</p>
                     {% endfor %}
                 </div>
                 <div class="clearfix"></div>
