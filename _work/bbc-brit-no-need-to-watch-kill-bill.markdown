@@ -3,7 +3,7 @@ title: BBC Brit - No Need To Watch - Kill Bill
 date: 2017-01-23 04:48:00 Z
 position: 0
 link: https://vimeo.com/199662286
-thumbnail_image: http://placehold.it/1920x1080
+thumbnail_image: "/uploads/image_003.png"
 video-number: 199662286
 ---
 
