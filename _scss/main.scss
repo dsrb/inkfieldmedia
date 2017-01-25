@@ -224,7 +224,7 @@ img {
         display: block;
         color: $slate;
         background: none;
-        margin: 1em 0;
+        margin: 0;
         border: 2px solid $slate;
         padding: 0.2em 1em;
         font-size: 0.8em;
@@ -275,6 +275,22 @@ img {
     input[type="radio"] + label span,
     input[type="radio"]:checked + label span {
         @include transition (background-color, 200ms, ease);
+    }
+
+    textarea {
+        width: 100%;
+        color: $slate;
+        background-color: $grey;
+        margin: 0;
+        border: none;
+        padding: 1em;
+        font-size: 0.8em;
+        letter-spacing: 0.06em;
+
+        &:focus {
+            font-family: $medium;
+        }
+
     }
 
 }
