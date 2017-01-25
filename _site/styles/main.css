@@ -544,7 +544,10 @@ body {
 
 a {
   color: #000;
-  text-decoration: none; }
+  text-decoration: none;
+  transition: color, 200ms, ease; }
+  a:hover {
+    color: #999; }
 
 h1, h2, h3, h4, h5 {
   font-weight: normal;
@@ -598,7 +601,7 @@ img {
   padding: 0; }
   .header-list-item:after {
     content: " \2022";
-    color: #888;
+    color: #999;
     margin: 0 0 0 1.2em;
     font-weight: 400; }
   .header-list-item:last-child:after {

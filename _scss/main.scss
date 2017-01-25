@@ -1,9 +1,10 @@
 @import "normalize";
+@import "mixins";
 @import "reset";
 @import "fonts";
 
 $grey: #eee;
-$coal: #888;
+$coal: #999;
 $black: #000;
 $white: #fff;
 
@@ -19,6 +20,12 @@ body {
 a {
     color: $black;
     text-decoration: none;
+    @include transition (color, 200ms, ease);
+
+    &:hover {
+        color: $coal;
+    }
+
 }
 
 h1, h2, h3, h4, h5 {
