@@ -5,6 +5,7 @@
 
 $grey: #eee;
 $coal: #999;
+$slate: #282523;
 $black: #000;
 $white: #fff;
 
@@ -18,14 +19,8 @@ body {
 }
 
 a {
-    color: $black;
     text-decoration: none;
     @include transition (color, 200ms, ease);
-
-    &:hover {
-        color: $coal;
-    }
-
 }
 
 h1, h2, h3, h4, h5 {
@@ -79,8 +74,20 @@ img {
 // Header //
 
 .header {
-    background-color: $grey;
+    background-color: $slate;
     padding: 0.8em 0 0 0;
+    font-weight: 100;
+    letter-spacing: 0.06em;
+
+    a {
+        color: $white;
+
+        &:hover {
+            color: $grey;
+        }
+
+    }
+
 }
 
 .header-list {
@@ -96,7 +103,7 @@ img {
 
     &:after {
         content: " \2022";
-        color: $coal;
+        color: $white;
         margin: 0 0 0 1.2em;
         font-weight: 400;
     }
@@ -128,6 +135,19 @@ img {
     padding: 0 0 0.4em 0;
 }
 
+.footer-copyright {
+    margin: 1em 0 0 0;
+    background-color: $slate;
+}
+
+.footer-copyright-text {
+    margin: 0.5em 0 0.2em 0;
+    color: $white;
+    font-size: 0.8em;
+    font-weight: 100;
+    letter-spacing: 0.06em;
+}
+
 // Other //
 
 .clearfix {
@@ -140,15 +160,18 @@ img {
     @extend .newsletter-form;
 
     input[type="radio"] {
-        display:none;
+        display: none;
     }
+
     input[type="radio"] + label {
-        color: #888;
+        color: $black;
+        margin: 1em 0;
     }
+
     input[type="radio"] + label span {
-        display:inline-block;
-        width: 10px;
-        height: 10px;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
         margin: -1px 1em 0 0;
         vertical-align: middle;
         cursor: pointer;
@@ -157,19 +180,16 @@ img {
     }
 
     input[type="radio"] + label span {
-        background-color: #888;
+        border: 2px solid $slate;
     }
 
     input[type="radio"]:checked + label span{
-        background-color: #000;
+        background-color: $slate;
     }
 
     input[type="radio"] + label span,
     input[type="radio"]:checked + label span {
-        -webkit-transition: background-color 0.4s linear;
-        -o-transition: background-color 0.4s linear;
-        -moz-transition: background-color 0.4s linear;
-        transition: background-color 0.4s linear;
+        @include transition (background-color, 200ms, ease);
     }
 
 }
@@ -186,6 +206,7 @@ img {
         border: none;
         padding: 0.6em 0.6em 0.3em 0.6em;
         font-size: 0.8em;
+        letter-spacing: 0.06em;
     }
 
     label {
@@ -195,23 +216,21 @@ img {
 
     button {
         display: block;
+        color: $slate;
         background: none;
         margin: 1em 0;
-        border: none;
-        padding: 0;
+        border: 2px solid $slate;
+        padding: 0.6em 1em 0.4em 1em;
         font-size: 0.8em;
+        letter-spacing: 0.06em;
+        @include transition (color, 200ms, ease);
+
+        &:hover {
+            color: $white;
+            background-color: $slate;
+        }
     }
 
-}
-
-.footer-copyright {
-    background-color: $grey;
-    margin: 1em 0 0 0;
-}
-
-.footer-copyright-text {
-    margin: 0.5em 0 0.2em 0;
-    font-size: 0.8em;
 }
 
 // Other //

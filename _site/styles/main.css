@@ -543,11 +543,8 @@ body {
   letter-spacing: 0.02em; }
 
 a {
-  color: #000;
   text-decoration: none;
   transition: color, 200ms, ease; }
-  a:hover {
-    color: #999; }
 
 h1, h2, h3, h4, h5 {
   font-weight: normal;
@@ -587,8 +584,14 @@ img {
   z-index: -100; }
 
 .header {
-  background-color: #eee;
-  padding: 0.8em 0 0 0; }
+  background-color: #282523;
+  padding: 0.8em 0 0 0;
+  font-weight: 100;
+  letter-spacing: 0.06em; }
+  .header a {
+    color: #fff; }
+    .header a:hover {
+      color: #eee; }
 
 .header-list {
   margin: 0;
@@ -601,7 +604,7 @@ img {
   padding: 0; }
   .header-list-item:after {
     content: " \2022";
-    color: #999;
+    color: #fff;
     margin: 0 0 0 1.2em;
     font-weight: 400; }
   .header-list-item:last-child:after {
@@ -619,6 +622,17 @@ img {
 .footer-list-item {
   padding: 0 0 0.4em 0; }
 
+.footer-copyright {
+  margin: 1em 0 0 0;
+  background-color: #282523; }
+
+.footer-copyright-text {
+  margin: 0.5em 0 0.2em 0;
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 100;
+  letter-spacing: 0.06em; }
+
 .clearfix {
   clear: both; }
 
@@ -626,26 +640,27 @@ img {
   display: none; }
 
 .contact-form input[type="radio"] + label {
-  color: #888; }
+  color: #000;
+  margin: 1em 0; }
 
 .contact-form input[type="radio"] + label span {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 18px;
+  height: 18px;
   margin: -1px 1em 0 0;
   vertical-align: middle;
   cursor: pointer;
   border-radius: 50%; }
 
 .contact-form input[type="radio"] + label span {
-  background-color: #888; }
+  border: 2px solid #282523; }
 
 .contact-form input[type="radio"]:checked + label span {
-  background-color: #000; }
+  background-color: #282523; }
 
 .contact-form input[type="radio"] + label span,
 .contact-form input[type="radio"]:checked + label span {
-  transition: background-color 0.4s linear; }
+  transition: background-color, 200ms, ease; }
 
 .newsletter-form input, .contact-form input {
   display: block;
@@ -654,7 +669,8 @@ img {
   margin: 0 0 0.8em 0;
   border: none;
   padding: 0.6em 0.6em 0.3em 0.6em;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  letter-spacing: 0.06em; }
 
 .newsletter-form label, .contact-form label {
   margin: 0 0 0.6em 0;
@@ -662,19 +678,17 @@ img {
 
 .newsletter-form button, .contact-form button {
   display: block;
+  color: #282523;
   background: none;
   margin: 1em 0;
-  border: none;
-  padding: 0;
-  font-size: 0.8em; }
-
-.footer-copyright {
-  background-color: #eee;
-  margin: 1em 0 0 0; }
-
-.footer-copyright-text {
-  margin: 0.5em 0 0.2em 0;
-  font-size: 0.8em; }
+  border: 2px solid #282523;
+  padding: 0.6em 1em 0.4em 1em;
+  font-size: 0.8em;
+  letter-spacing: 0.06em;
+  transition: color, 200ms, ease; }
+  .newsletter-form button:hover, .contact-form button:hover {
+    color: #fff;
+    background-color: #282523; }
 
 .no-spacing {
   margin: 0 !important;
