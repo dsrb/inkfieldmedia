@@ -1,5 +1,5 @@
 ---
 title: Home
-layout: work
+layout: home
 ---
 
