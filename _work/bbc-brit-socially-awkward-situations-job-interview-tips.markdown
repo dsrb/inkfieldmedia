@@ -3,7 +3,7 @@ title: BBC Brit - Socially Awkward Situations - Job Interview Tips
 date: 2017-01-23 04:50:00 Z
 position: 1
 link: https://vimeo.com/199659355
-thumbnail_image: http://placehold.it/1920x1080
+thumbnail_image: "/uploads/image_006.png"
 video-number: 199659355
 ---
 
