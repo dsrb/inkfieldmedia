@@ -619,7 +619,32 @@ img {
 .clearfix {
   clear: both; }
 
-.newsletter-form input {
+.contact-form input[type="radio"] {
+  display: none; }
+
+.contact-form input[type="radio"] + label {
+  color: #888; }
+
+.contact-form input[type="radio"] + label span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: -1px 1em 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 50%; }
+
+.contact-form input[type="radio"] + label span {
+  background-color: #888; }
+
+.contact-form input[type="radio"]:checked + label span {
+  background-color: #000; }
+
+.contact-form input[type="radio"] + label span,
+.contact-form input[type="radio"]:checked + label span {
+  transition: background-color 0.4s linear; }
+
+.newsletter-form input, .contact-form input {
   display: block;
   width: 100%;
   background-color: #eee;
@@ -628,14 +653,14 @@ img {
   padding: 0.6em 0.6em 0.3em 0.6em;
   font-size: 0.8em; }
 
-.newsletter-form label {
+.newsletter-form label, .contact-form label {
   margin: 0 0 0.6em 0;
   font-size: 0.6em; }
 
-.newsletter-form button {
+.newsletter-form button, .contact-form button {
   display: block;
   background: none;
-  margin: 0 0 0.4em 0;
+  margin: 1em 0;
   border: none;
   padding: 0;
   font-size: 0.8em; }
@@ -651,6 +676,9 @@ img {
 .no-spacing {
   margin: 0 !important;
   padding: 0 !important; }
+
+*:focus {
+  outline: 0; }
 
 * {
   box-sizing: border-box;

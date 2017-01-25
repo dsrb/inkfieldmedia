@@ -58,11 +58,29 @@
                 <h2>Contact</h2>
             </div>
             <div class="col-50">
-                <form action="https://formspree.io/mjkwqppx" method="POST"> 
-                    <input type="text" name="_gotcha" style="display: none"> 
-                    <input type="text" name="_gotcha"> 
-                    <input type="text" name="_gotcha"> 
+                <form class="contact-form" action="https://formspree.io/mjkwqppx" method="POST"> 
+                    <input type="text" name="_gotcha" style="display: none">
 
+                    <label>Full Name</label>
+                    <input type="text" name="name" placeholder="Enter your name...">
+
+                    <label>Email Address</label>
+                    <input type="text" name="name" placeholder="Enter your name...">
+
+                    <label>Your Subject</label>
+                    <input type="text" name="name" placeholder="Enter your name...">
+
+                    <label>I'm interested in...</label>
+
+                    <div>
+                        <input type="radio" id="radio01" name="radio" checked>
+                        <label for="radio01"><span></span>Radio Button 1</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="radio02" name="radio">
+                        <label for="radio02"><span></span>Radio Button 2</label>
+                    </div>
 
                     <button type="submit">Send</button> 
                 </form>        

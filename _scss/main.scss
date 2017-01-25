@@ -99,7 +99,7 @@ img {
         &:after {
             content: "";
         }
-        
+
     }
 
 }
@@ -127,6 +127,46 @@ img {
     clear: both;
 }
 
+// Contact //
+
+.contact-form {
+    @extend .newsletter-form;
+
+    input[type="radio"] {
+        display:none;
+    }
+    input[type="radio"] + label {
+        color: #888;
+    }
+    input[type="radio"] + label span {
+        display:inline-block;
+        width: 10px;
+        height: 10px;
+        margin: -1px 1em 0 0;
+        vertical-align: middle;
+        cursor: pointer;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    input[type="radio"] + label span {
+        background-color: #888;
+    }
+
+    input[type="radio"]:checked + label span{
+        background-color: #000;
+    }
+
+    input[type="radio"] + label span,
+    input[type="radio"]:checked + label span {
+        -webkit-transition: background-color 0.4s linear;
+        -o-transition: background-color 0.4s linear;
+        -moz-transition: background-color 0.4s linear;
+        transition: background-color 0.4s linear;
+    }
+
+}
+
 // Newsletter //
 
 .newsletter-form {
@@ -149,7 +189,7 @@ img {
     button {
         display: block;
         background: none;
-        margin: 0 0 0.4em 0;
+        margin: 1em 0;
         border: none;
         padding: 0;
         font-size: 0.8em;
@@ -172,6 +212,10 @@ img {
 .no-spacing {
     margin: 0 !important;
     padding: 0 !important;
+}
+
+*:focus {
+    outline: 0;
 }
 
 // Columns // 
