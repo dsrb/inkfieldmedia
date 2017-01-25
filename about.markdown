@@ -20,7 +20,7 @@ selected-clients:
 - Universal Sony Pictures Home Entertainment
 - TVNZ
 - World Animal Protection
-Services:
+services:
 - Video Production
 - Post Production
 - Editing
