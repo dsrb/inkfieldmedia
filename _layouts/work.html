@@ -7,14 +7,16 @@ layout: default
             <div class="content">
                 {% assign sorted_work = site.work | sort:"position" %}
                 {% for work in sorted_work %}
-                    <div class="col-50">
-                        <img src="{{ work.thumbnail_image }}">
-                        <h2><a href="{{ work.url }}">{{ work.title }}</a></h2>
+                <div class="col-50">
+                    <div class="content-work-thumbnail">
+                        <a href="{{ work.url }}">
+                            <img src="{{ work.thumbnail_image }}">
+                            <h2>{{ work.title }}</h2>
+                        </a>
                     </div>
+                </div>
                 {% endfor %}
                 <div class="clearfix"></div>
             </div>
         </div>
     </div>
-
-
