@@ -42,17 +42,8 @@ img {
     background-color: #fff;
 }
 
-.content-work {
+.content {
     padding: 5em 0;
-}
-
-.content-about {
-
-    h2 {
-        margin: 0;
-        padding: 0;
-    }
-
 }
 
 // Video //
@@ -101,6 +92,14 @@ img {
         color: $coal;
         margin: 0 0 0 1.2em;
         font-weight: 400;
+    }
+
+    &:last-child {
+
+        &:after {
+            content: "";
+        }
+        
     }
 
 }

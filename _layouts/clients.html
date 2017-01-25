@@ -2,3 +2,19 @@
 layout: default
 ---
 
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <div class="col-25">
+                    <h2>{{page.title}}</h2>
+                </div>
+                {% assign sorted_clients = site.clients | sort:"position" %}
+                {% for clients in sorted_clients %}
+                    <div class="col-25">
+                        <img src="{{ clients.logo_image }}">
+                    </div>
+                {% endfor %}
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
