@@ -3,22 +3,6 @@ title: About
 date: 2017-01-23 02:50:00 Z
 position: 1
 menu: main
-selected-clients:
-- ARTE
-- ABC 3
-- BBC Worldwide
-- Bilfinger
-- CNN
-- Channel 4
-- Channel 9
-- Channel 7
-- Discovery Channel
-- Network 10
-- Superdrug
-- SBS
-- Universal Sony Pictures Home Entertainment
-- TVNZ
-- World Animal Protection
 services:
 - Video Production
 - Post Production
