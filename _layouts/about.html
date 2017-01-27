@@ -13,7 +13,7 @@ layout: default
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div class="content">
+            <div class="content bottom-spacer">
                 <div class="col-50">
                     <h2>Selected Clients</h2>
                 </div>
@@ -25,12 +25,34 @@ layout: default
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <div class="content">
+            <div class="content bottom-spacer">
                 <div class="col-50">
-                    <h2>Services</h2>
+                    <h2>Creative</h2>
                 </div>
                 <div class="col-50">
-                    {% for service in page.services limit: 15 %}
+                    {% for service in page.creative %}
+                        <p>{{ service }}</p>
+                    {% endfor %}
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="content bottom-spacer">
+                <div class="col-50">
+                    <h2>Production</h2>
+                </div>
+                <div class="col-50">
+                    {% for service in page.production %}
+                        <p>{{ service }}</p>
+                    {% endfor %}
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="content bottom-spacer">
+                <div class="col-50">
+                    <h2>Post Production</h2>
+                </div>
+                <div class="col-50">
+                    {% for service in page.post %}
                         <p>{{ service }}</p>
                     {% endfor %}
                 </div>
