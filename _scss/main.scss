@@ -6,10 +6,11 @@
 $regular: 'Graphik-Regular', sans-serif;
 $medium: 'Graphik-Medium', sans-serif;
 
-$grey: #eee;
-$coal: #999;
-$slate: #000;
 $navy: #2e343d;
+$slate: #a9a9a9;
+
+$grey: #eee;
+
 $black: #000;
 $white: #fff;
 
@@ -43,7 +44,7 @@ img {
 .container {
     max-width: 80em;
     margin: 0 auto;
-    padding: 3.4rem;
+    padding: 2.4rem;
 }
 
 .content-site {
@@ -53,7 +54,7 @@ img {
 .content-highlight {
     color: $white;
     background-color: $navy;
-    padding: 1em 1em 2em 1em;
+    padding: 1em 1em 3em 1em;
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
     -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
@@ -63,7 +64,7 @@ img {
     @include transition (all, 400ms, ease);
 
     a {
-        color: $black;
+        color: $white;
 
         &:hover {
             text-decoration: underline;
@@ -109,7 +110,7 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 50vh;
+    height: 600px;
     text-align: center;
 }
 
@@ -127,7 +128,7 @@ img {
 // Header //
 
 .header {
-    background-color: $slate;
+    background-color: $black;
     margin: 0;
     padding: 1.7rem 3.4rem;
     letter-spacing: 0.06em;
@@ -182,7 +183,7 @@ img {
         color: $black;
 
         &:hover {
-            color: $grey;
+            color: $slate;
         }
 
     }
@@ -200,7 +201,7 @@ img {
 }
 
 .footer-copyright {
-    background-color: $slate;
+    background-color: $black;
 }
 
 .footer-copyright-text {
@@ -253,10 +254,10 @@ img {
 
     button {
         display: block;
-        color: $slate;
+        color: $black;
         background: none;
         margin: 0;
-        border: 2px solid $slate;
+        border: 2px solid $black;
         padding: 0.2em 1em;
         font-size: 0.8em;
         letter-spacing: 0.06em;
@@ -264,8 +265,9 @@ img {
 
         &:hover {
             color: $white;
-            background-color: $slate;
+            background-color: $black;
         }
+
     }
 
 }
@@ -280,7 +282,7 @@ img {
     }
 
     input[type="radio"] + label {
-        color: $black;
+        color: $white;
         margin: 1em 0;
     }
 
@@ -296,11 +298,11 @@ img {
     }
 
     input[type="radio"] + label span {
-        border: 2px solid $slate;
+        border: 2px solid $white;
     }
 
     input[type="radio"]:checked + label span{
-        background-color: $slate;
+        background-color: $white;
     }
 
     input[type="radio"] + label span,
@@ -310,7 +312,7 @@ img {
 
     textarea {
         width: 100%;
-        color: $slate;
+        color: $black;
         background-color: $grey;
         margin: 0;
         border: none;
@@ -320,6 +322,17 @@ img {
 
         &:focus {
             font-family: $medium;
+        }
+
+    }
+
+    button {
+        color: $white;
+        border: 2px solid $white;
+
+        &:hover {
+            color: $black;
+            background-color: $white;
         }
 
     }
@@ -395,4 +408,36 @@ img {
 
 .col-100 {
     width: 100%;
+}
+
+@media screen and (max-width: 62rem) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    .col-25 {
+        width: 50%;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .col-20, .col-50, .col-60, .col-75, .col-100 {
+        width: 100%;
+    }
+
+    .col-30 {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 32rem) {
+
+    .col-25 {
+        width: 100%;
+    }
+
 }
