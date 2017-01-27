@@ -3,10 +3,22 @@ title: About
 date: 2017-01-23 02:50:00 Z
 position: 1
 menu: main
-services:
-- Video Production
-- Post Production
-- Editing
+creative:
+- Idea development
+- Scripting
+- Storyboarding
+- 
+production:
+- Video Production Services
+- Corporate Films
+- Branded Content & Promo Films
+- Commercials
+- Music Videos
+- Film Planning & Production
+- Aerial Cinematography
+post:
+- Editing & Post Production
+- Motion Graphics Design & Animation
 layout: about
 ---
 
