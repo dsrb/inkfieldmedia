@@ -126,6 +126,7 @@ img {
     }
 
     a {
+        color: $black;
         text-transform: uppercase;
         font-size: 0.6em;
     }
@@ -201,6 +202,11 @@ img {
     display: inline-block;
     margin: 0 1.2em 0 0;
     padding: 0;
+
+    &:last-child {
+        margin: 0;
+    }
+
 }
 
 // Footer //
@@ -246,12 +252,13 @@ img {
 // Other //
 
 .material-icons {
+    display: block !important;
     color: $black;
-    font-size: 3em !important;
+    font-size: 4em !important;
     @include transition (color, 200ms, ease);
 
     &:hover {
-        color: $navy;
+        color: $slate;
     }
 
 }

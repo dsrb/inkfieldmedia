@@ -615,6 +615,7 @@ img {
   .header-video-container img {
     max-width: 150px; }
   .header-video-container a {
+    color: #000;
     text-transform: uppercase;
     font-size: 0.6em; }
 
@@ -671,6 +672,8 @@ img {
   display: inline-block;
   margin: 0 1.2em 0 0;
   padding: 0; }
+  .header-list-item:last-child {
+    margin: 0; }
 
 .footer {
   position: relative;
@@ -700,11 +703,12 @@ img {
   letter-spacing: 0.06em; }
 
 .material-icons {
+  display: block !important;
   color: #000;
-  font-size: 3em !important;
+  font-size: 4em !important;
   transition: color, 200ms, ease; }
   .material-icons:hover {
-    color: #2e343d; }
+    color: #a9a9a9; }
 
 .clearfix {
   clear: both; }
