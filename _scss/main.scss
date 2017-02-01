@@ -110,8 +110,26 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 600px;
+    height: 45vh;
     text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    img {
+        max-width: 150px;
+    }
+
+    a {
+        text-transform: uppercase;
+        font-size: 0.6em;
+    }
+
 }
 
 .header-video {
@@ -130,7 +148,7 @@ img {
 .header {
     background-color: $black;
     margin: 0;
-    padding: 1.7rem 3.4rem;
+    padding: 0;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
