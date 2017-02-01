@@ -699,6 +699,13 @@ img {
   font-size: 0.8em;
   letter-spacing: 0.06em; }
 
+.material-icons {
+  color: #000;
+  font-size: 3em !important;
+  transition: color, 200ms, ease; }
+  .material-icons:hover {
+    color: #2e343d; }
+
 .clearfix {
   clear: both; }
 

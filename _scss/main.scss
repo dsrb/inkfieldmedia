@@ -245,6 +245,17 @@ img {
 
 // Other //
 
+.material-icons {
+    color: $black;
+    font-size: 3em !important;
+    @include transition (color, 200ms, ease);
+
+    &:hover {
+        color: $navy;
+    }
+
+}
+
 .clearfix {
     clear: both;
 }
