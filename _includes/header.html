@@ -12,7 +12,6 @@
     <body>
 
         <div class="header-video-container">
-            <img src="/assets/logo.svg">
             <a href="#">View Showreel</a>
             <video class="header-video" autoplay muted loop>
                 <source src="/uploads/video.m4v" type="video/m4v">
@@ -21,11 +20,9 @@
         </div>
 
         <header class="header">
-            <div class="container">
+            <div class="header-inner">
+                <img class="header-logo" src="/assets/logo.svg">
                 <ul class="header-list">
-                    <li class="header-list-item site-title">
-                        <a href="{{ site.baseurl }}">{{ site.title }}</a>
-                    </li>
                     {% assign sorted_pages = site.pages | sort:"position" %}
                     {% for page in sorted_pages %}{% if page.menu == 'main' %}<li class="header-list-item"><a href="{{ page.url }}">{{ page.title }}</a></li>{% endif %}{% endfor %}
                 </ul>
