@@ -2,61 +2,57 @@
 layout: default
 ---
 
-    <div class="container">
-        <div class="row content-highlight">
-            <div class="content">
-                <div class="col-50">
-                    <h2>{{ page.title }}</h2>
-                </div>
-                <div class="col-50">
-                    {{ content }}
-                </div>
-                <div class="clearfix"></div>
+        <div class="content">
+            <div class="col-50">
+                <h2>{{ page.title }}</h2>
             </div>
-            <div class="content bottom-spacer">
-                <div class="col-50">
-                    <h2>Selected Clients</h2>
-                </div>
-                <div class="col-50">
-                    {% assign sorted_clients = site.clients | sort:"position" %}
-                    {% for clients in sorted_clients %}
-                        <p>{{ clients.title }}</p>
-                    {% endfor %}
-                </div>
-                <div class="clearfix"></div>
+            <div class="col-50">
+                {{ content }}
             </div>
-            <div class="content bottom-spacer">
-                <div class="col-50">
-                    <h2>Creative</h2>
-                </div>
-                <div class="col-50">
-                    {% for service in page.creative %}
-                        <p>{{ service }}</p>
-                    {% endfor %}
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="content bottom-spacer">
-                <div class="col-50">
-                    <h2>Production</h2>
-                </div>
-                <div class="col-50">
-                    {% for service in page.production %}
-                        <p>{{ service }}</p>
-                    {% endfor %}
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="content bottom-spacer">
-                <div class="col-50">
-                    <h2>Post Production</h2>
-                </div>
-                <div class="col-50">
-                    {% for service in page.post %}
-                        <p>{{ service }}</p>
-                    {% endfor %}
-                </div>
-                <div class="clearfix"></div>
-            </div>
+            <div class="clearfix"></div>
         </div>
-    </div>
+        <div class="content bottom-spacer">
+            <div class="col-50">
+                <h2>Selected Clients</h2>
+            </div>
+            <div class="col-50">
+                {% assign sorted_clients = site.clients | sort:"position" %}
+                {% for clients in sorted_clients %}
+                    <p>{{ clients.title }}</p>
+                {% endfor %}
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="content bottom-spacer">
+            <div class="col-50">
+                <h2>Creative</h2>
+            </div>
+            <div class="col-50">
+                {% for service in page.creative %}
+                    <p>{{ service }}</p>
+                {% endfor %}
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="content bottom-spacer">
+            <div class="col-50">
+                <h2>Production</h2>
+            </div>
+            <div class="col-50">
+                {% for service in page.production %}
+                    <p>{{ service }}</p>
+                {% endfor %}
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="content bottom-spacer">
+            <div class="col-50">
+                <h2>Post Production</h2>
+            </div>
+            <div class="col-50">
+                {% for service in page.post %}
+                    <p>{{ service }}</p>
+                {% endfor %}
+            </div>
+            <div class="clearfix"></div>
+        </div>

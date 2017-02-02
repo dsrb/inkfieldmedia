@@ -1,34 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>{{ site.title }} | {{ page.title }}</title>
-        <meta name="description" content="{{ page.description }}">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="/styles/main.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
-    <body>
-
-        <div class="header-video-container">
-            <a href="#">
-                <i class="material-icons md-48">play_circle_outline</i>
-                <span>View Showreel</span>
-            </a>
-            <video class="header-video" autoplay muted loop>
-                <source src="/uploads/video.m4v" type="video/m4v">
-                <source src="/uploads/video.webm" type="video/webm">
-            </video>
-        </div>
-
-        <header class="header">
-            <div class="header-inner">
-                <img class="header-logo" src="/assets/logo.svg">
-                <ul class="header-list">
-                    {% assign sorted_pages = site.pages | sort:"position" %}
-                    {% for page in sorted_pages %}{% if page.menu == 'main' %}<li class="header-list-item"><a href="{{ page.url }}">{{ page.title }}</a></li>{% endif %}{% endfor %}
-                </ul>
-            </div>
-        </header>
+<div id="sticky-anchor"></div><div id="spacer-anchor"></div>
+<header id="sticky-element" class="header">
+    <div class="header-inner bg transition">
+        <span class="header-site-title">{{ site.title }}</span>
+        <ul class="header-list">
+            {% assign sorted_pages = site.pages | sort:"position" %}
+            {% for page in sorted_pages %}{% if page.menu == 'main' %}<li class="header-list-item"><a href="{{ page.url }}">{{ page.title }}</a></li>{% endif %}{% endfor %}
+        </ul>
+    </div>
+</header>

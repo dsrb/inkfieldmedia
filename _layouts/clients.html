@@ -2,21 +2,17 @@
 layout: default
 ---
 
-    <div class="container">
-        <div class="row content-highlight">
-            <div class="content">
-                <div class="col-25">
-                    <h2>{{page.title}}</h2>
-                </div>
-                <div class="col-75 content-client-thumbnail">
-                    {% assign sorted_clients = site.clients | sort:"position" %}
-                    {% for clients in sorted_clients %}
-                        <div class="col-30">
-                            <img src="{{ clients.logo_image }}">
-                        </div>
-                    {% endfor %}
-                </div>
-                <div class="clearfix"></div>
+        <div class="content">
+            <div class="col-25">
+                <h2>{{page.title}}</h2>
             </div>
+            <div class="col-75 content-client-thumbnail">
+                {% assign sorted_clients = site.clients | sort:"position" %}
+                {% for clients in sorted_clients %}
+                    <div class="col-30">
+                        <img src="{{ clients.logo_image }}">
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="clearfix"></div>
         </div>
-    </div>
