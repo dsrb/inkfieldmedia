@@ -32,7 +32,7 @@ defaults:
   values:
     permalink: "/work/:title/"
     link: 
-    layout: post
+    layout: fullscreen
     thumbnail_image: 
     video-number: 
 - scope:
