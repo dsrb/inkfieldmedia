@@ -315,6 +315,8 @@ img {
         background-color: $grey;
         margin: 0 0 0.8em 0;
         border: none;
+        border-radius: 0;
+        -webkit-appearance: none;
         padding: 1em;
         font-size: 0.8em;
         letter-spacing: 0.06em;
