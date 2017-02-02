@@ -7,9 +7,9 @@ thumbnail_image: "/uploads/image_004.png"
 video-number: 199299417
 ---
 
-Director: Jack Davidson
-Producer: Jake Whitelocke
-Production: Inkfield Media
-DP: Stephen Ribeiro
-Creative Agency & Post Production: TOAD.
-Client: Always
+Director: Jack Davidson<br>
+Producer: Jake Whitelocke<br>
+Production: Inkfield Media<br>
+DP: Stephen Ribeiro<br>
+Creative Agency & Post Production: TOAD.<br>
+Client: Always<br>
