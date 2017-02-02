@@ -34,8 +34,8 @@ defaults:
     link: 
     layout: fullscreen
     thumbnail_image: 
-    video-number: 
-    home: 
+    video_number: 
+    homepage_feature: 
 - scope:
     path: ''
     type: clients
