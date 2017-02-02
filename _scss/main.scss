@@ -217,6 +217,10 @@ img {
 
 }
 
+.header-site-mobile {
+    display: none;
+}
+
 // Footer //
 
 .footer {
@@ -268,6 +272,10 @@ img {
         color: $slate;
     }
 
+}
+
+.header-menu-icon {
+    display: none !important;
 }
 
 .clearfix {
@@ -565,6 +573,32 @@ section embed {
             -webkit-filter: grayscale(0);
         }
 
+    }
+
+    .header-site-title {
+        display: none;
+    }
+
+    .header-innner {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        height: 100px;
+        padding: 0 2.4rem;
+        z-index: 10;
+    }
+
+    .header-list {
+        display: none;
+    }
+
+    .header-menu-icon {
+        display: block !important;
     }
 
 }

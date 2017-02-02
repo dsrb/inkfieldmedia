@@ -25,3 +25,9 @@ $(function() {
     $(window).scroll(spacer_add);
     spacer_add();
 });
+
+$('.header-menu-icon').click(function() {
+  $('.header-list').toggle('slow', function() {
+    console.log('hello');
+  });
+});

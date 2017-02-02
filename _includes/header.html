@@ -2,6 +2,7 @@
 <header id="sticky-element" class="header">
     <div class="header-inner bg transition">
         <a href="{{ site.baseurl }}" class="header-site-title">{{ site.title }}</a>
+        <i class="material-icons md-48 header-menu-icon">menu</i>
         <ul class="header-list">
             {% assign sorted_pages = site.pages | sort:"position" %}
             {% for page in sorted_pages %}{% if page.menu == 'main' %}<li class="header-list-item"><a href="{{ page.url }}">{{ page.title }}</a></li>{% endif %}{% endfor %}
