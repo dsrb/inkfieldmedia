@@ -110,7 +110,7 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 70vh;
+    height: 100vh;
     text-align: center;
     display: -webkit-flex;
     display: flex;
@@ -299,6 +299,10 @@ img {
 
 .spacer {
     margin-top: 100px;
+}
+
+#selected-clients-hide {
+    display: none;
 }
 
 // Newsletter //

@@ -1,7 +1,7 @@
 <div id="sticky-anchor"></div><div id="spacer-anchor"></div>
 <header id="sticky-element" class="header">
     <div class="header-inner bg transition">
-        <span class="header-site-title">{{ site.title }}</span>
+        <a href="{{ site.baseurl }}" class="header-site-title">{{ site.title }}</a>
         <ul class="header-list">
             {% assign sorted_pages = site.pages | sort:"position" %}
             {% for page in sorted_pages %}{% if page.menu == 'main' %}<li class="header-list-item"><a href="{{ page.url }}">{{ page.title }}</a></li>{% endif %}{% endfor %}
