@@ -4,15 +4,17 @@ layout: video
 
         <div class="content">
             {% assign sorted_work = site.work | sort:"position" %}
-            {% for work in sorted_work %}
-            <div class="col-50">
-                <div class="content-work-thumbnail">
-                    <a href="{{ work.url }}">
-                        <img src="{{ work.thumbnail_image }}">
-                        <h2>{{ work.title }}</h2>
-                    </a>
-                </div>
-            </div>
+            {% for work in sorted_work limit: 6 %}
+                {% if work.home == 'featured' %}
+                    <div class="col-50">
+                        <div class="content-work-thumbnail">
+                            <a href="{{ work.url }}">
+                                <img src="{{ work.thumbnail_image }}">
+                                <h2>{{ work.title }}</h2>
+                            </a>
+                        </div>
+                    </div>
+                {% endif %}
             {% endfor %}
             <div class="clearfix"></div>
         </div>

@@ -438,6 +438,29 @@ section embed {
     height: 100%;
 }
 
+.video-pagination {
+    padding: 1em 0;
+
+    a {
+        display: block;
+        width: 50%;
+        color: $white;
+        background: none;
+        margin: 0 0 1em 0;
+        border: 2px solid $white;
+        padding: 0.2em 1em;
+        font-size: 0.8em;
+        letter-spacing: 0.06em;
+        @include transition (color, 200ms, ease);
+
+        &:hover {
+            color: $navy;
+            background-color: $white;
+        }
+
+    }
+
+}
 
 // Columns // 
 
