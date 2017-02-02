@@ -7,8 +7,8 @@ thumbnail_image: "/uploads/image_002.png"
 video-number: 199310919
 ---
 
-Producer: Fiona Sinclair Scott
-Production: Inkfield Media
-DP: Stephen Ribeiro
-Post Production: Oliver Bloor
-Client: CNN Style
+Producer: Fiona Sinclair Scott<br>
+Production: Inkfield Media<br>
+DP: Stephen Ribeiro<br>
+Post Production: Oliver Bloor<br>
+Client: CNN Style<br>

@@ -7,8 +7,8 @@ thumbnail_image: "/uploads/image_003.png"
 video-number: 199662286
 ---
 
-Director: Dipak Patel
-Producer: Jack Belford
-DP: Inkfield Media - Stephen Ribeiro
-Post Production: Dipak Patel, Jack Belford
-Client: BBC Worldwide
+Director: Dipak Patel<br>
+Producer: Jack Belford<br>
+DP: Inkfield Media - Stephen Ribeiro<br>
+Post Production: Dipak Patel, Jack Belford<br>
+Client: BBC Worldwide<br>

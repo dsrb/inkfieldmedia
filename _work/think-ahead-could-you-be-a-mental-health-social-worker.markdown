@@ -7,9 +7,9 @@ thumbnail_image: "/uploads/image_005.png"
 video-number: 199305401
 ---
 
-Creative Director: Guy Davidson
-Director: Danny Clarke
-Production: Inkfield Media
-DP: Stephen Ribeiro
-Creative Agency & Post Production: TOAD.
-Client: Think Ahead
+Creative Director: Guy Davidson<br>
+Director: Danny Clarke<br>
+Production: Inkfield Media<br>
+DP: Stephen Ribeiro<br>
+Creative Agency & Post Production: TOAD.<br>
+Client: Think Ahead<br>
