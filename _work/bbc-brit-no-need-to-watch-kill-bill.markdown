@@ -5,6 +5,7 @@ position: 0
 link: https://vimeo.com/199662286
 thumbnail_image: "/uploads/image_003.png"
 video-number: 199662286
+home: featured
 ---
 
 Director: Dipak Patel<br>
