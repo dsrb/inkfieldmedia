@@ -714,12 +714,13 @@ img {
   margin: 0;
   padding: 0;
   color: #000;
+  font-size: 0.8em;
   letter-spacing: 0.06em; }
 
 .material-icons {
   display: block !important;
   color: #000;
-  font-size: 4em !important;
+  font-size: 2.6em !important;
   transition: color, 200ms, ease; }
   .material-icons:hover {
     color: #a9a9a9; }
@@ -984,7 +985,16 @@ section embed {
     -ms-flex-direction: row !important;
         flex-direction: row !important;
     -ms-flex-pack: end !important;
-        justify-content: flex-end !important; } }
+        justify-content: flex-end !important; }
+  .video-pagination a {
+    width: 100%;
+    font-size: 0.6em; }
+  h1 {
+    font-size: 1.6em; }
+  p {
+    font-size: 0.8em; }
+  .content-work-thumbnail, .content-client-thumbnail {
+    margin: 0 0 2em 0; } }
 
 @media screen and (max-width: 32rem) {
   .col-25 {
