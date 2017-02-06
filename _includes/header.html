@@ -10,6 +10,6 @@
     </div>
     <ul class="header-list-mobile">
         {% assign sorted_pages = site.pages | sort:"position" %}
-        {% for page in sorted_pages %}{% if page.menu == 'main' %}<li class="header-list-item"><a href="{{ page.url }}">{{ page.title }}</a></li><hr>{% endif %}{% endfor %}
+        {% for page in sorted_pages %}{% if page.menu == 'main' %}<li class="header-list-item"><a href="{{ page.url }}">{{ page.title }}</a></li>{% endif %}{% endfor %}
     </ul>
 </header>
