@@ -107,7 +107,7 @@ img {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 100vh;
+    height: 60vh;
     text-align: center;
     display: -webkit-flex;
     display: flex;
@@ -452,6 +452,45 @@ section embed {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+    left: -100%;
+    transition: opacity .5s;
+    -webkit-transition: opacity .5s;
+}
+
+.video-container {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.close {
+    width: 20px;
+    fill: white;
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+.close:hover {
+    fill: rgba(255,255,255,0.5);
+    cursor: pointer;
+}
+
+.show {
+    opacity: 1;
 }
 
 .video-pagination {
