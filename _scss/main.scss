@@ -493,6 +493,23 @@ section embed {
     opacity: 1;
 }
 
+.play {
+
+    span {
+        font-size: 0.8em;
+        @include transition (color, 200ms, ease);
+    }
+
+    &:hover > span { 
+        color: $slate; 
+    }
+
+    .play:hover > .material-icons {
+        color: $slate; 
+    }
+
+}
+
 .video-pagination {
     padding: 1em 0;
 
