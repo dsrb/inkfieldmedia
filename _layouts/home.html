@@ -5,7 +5,7 @@ layout: video
         <div class="content">
             {% assign sorted_work = site.work | sort:"position" %}
             {% for work in sorted_work limit: 6 %}
-                {% if work.home == 'featured' %}
+                {% if work.home == 'yes' %}
                     <div class="col-50">
                         <div class="content-work-thumbnail">
                             <a href="{{ work.url }}">
