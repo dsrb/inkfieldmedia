@@ -38,10 +38,11 @@ $(function() {
 });
 
 $('.header-menu-icon').click(function() {
-  $('.header-list').toggle('slow', function() {
-    console.log('hello');
+    $('.header-list-mobile').toggle('slow', function() {
   });
 });
+
+
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
