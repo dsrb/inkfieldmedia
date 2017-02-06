@@ -4,6 +4,7 @@ date: 2017-01-23 04:50:00 Z
 position: 1
 link: https://vimeo.com/199659355
 thumbnail_image: "/uploads/image_006.png"
+homepage_feature: 'yes'
 video-number: 199659355
 ---
 
