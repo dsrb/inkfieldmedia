@@ -7,43 +7,7 @@ layout: default
                 <h2>Get In Touch</h2>
             </div>
             <div class="col-50">
-                <form class="contact-form" action="https://formspree.io/mjkwqppx" method="POST">
-
-                    <h2>Enter Your Details</h2>
-                    <input type="text" name="_gotcha" style="display: none">
-
-                    <label>Full Name</label>
-                    <input type="text" name="name" placeholder="Enter your name...">
-
-                    <label>Email Address</label>
-                    <input type="text" name="name" placeholder="Enter your email...">
-
-                    <label>Your Subject</label>
-                    <input type="text" name="name" placeholder="Enter your subject...">
-
-                    <label>I'm interested in...</label>
-
-                    <div>
-                        <input type="radio" id="radio01" name="radio" checked>
-                        <label for="radio01"><span></span>Creative</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" id="radio02" name="radio">
-                        <label for="radio02"><span></span>Production</label>
-                    </div>                    
-
-                    <div>
-                        <input type="radio" id="radio03" name="radio">
-                        <label for="radio03"><span></span>Post Production</label>
-                    </div>
-
-                    <label>Your Message</label>
-
-                    <textarea name="message" placeholder="Enter your message..." rows="8" cols="30"></textarea>
-
-                    <button type="submit">Send</button> 
-                </form>        
+                {% include form.html %}
             </div>
             <div class="clearfix"></div>        
         </div>

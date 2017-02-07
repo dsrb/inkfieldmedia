@@ -327,6 +327,7 @@ img {
     input {
         display: block;
         width: 100%;
+        color: $black;
         background-color: $grey;
         margin: 0 0 0.8em 0;
         border: none;
@@ -434,6 +435,20 @@ img {
 
 }
 
+.submit {
+    font-size: 0.6em;
+}
+
+.submit-fail {
+    color: #e74c3c;
+    font-size: 0.6em;
+}
+
+.submit-success {
+    color: #2ecc71;
+    font-size: 0.6em;
+}
+
 // Video //
 
 section {
@@ -492,6 +507,10 @@ section embed {
 
 .show {
     opacity: 1;
+}
+
+.hide {
+    display: none;
 }
 
 .play {

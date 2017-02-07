@@ -760,6 +760,7 @@ img {
 .newsletter-form input, .contact-form input {
   display: block;
   width: 100%;
+  color: #000;
   background-color: #eee;
   margin: 0 0 0.8em 0;
   border: none;
@@ -834,6 +835,17 @@ img {
     color: #000;
     background-color: #fff; }
 
+.submit {
+  font-size: 0.6em; }
+
+.submit-fail {
+  color: #e74c3c;
+  font-size: 0.6em; }
+
+.submit-success {
+  color: #2ecc71;
+  font-size: 0.6em; }
+
 section {
   position: relative;
   max-width: 100%;
@@ -884,6 +896,9 @@ section embed {
 
 .show {
   opacity: 1; }
+
+.hide {
+  display: none; }
 
 .play span {
   font-size: 0.8em;

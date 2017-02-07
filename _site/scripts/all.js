@@ -440,6 +440,7 @@ $('.header-menu-icon').click(function() {
     $('.header-list-mobile').toggle('slow', function() {
   });
 });
+
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
