@@ -1,57 +1,4 @@
-
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Inkfield Media | Contact</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="/styles/main.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
-    <body>
-
-        <main class="content-site">
-
-            <div class="page-video-container">
-        <video class="header-video" autoplay muted loop>
-        <source poster="/uploads/video.jpg" src="/uploads/video.m4v" type="video/m4v">
-        <source poster="/uploads/video.jpg" src="/uploads/video.webm" type="video/webm">
-    </video>
-</div>
-
-
-<div id="sticky-anchor"></div><div id="spacer-anchor"></div>
-<header id="sticky-element" class="header">
-    <div class="header-inner bg transition">
-        <ul class="header-list">
-            <li class="header-list-item"><a href="/about">About</a></li>
-            <li class="header-list-item"><a href="/work">Work</a></li>
-        </ul>
-        <a href="" class="header-site-title"><img src="/assets/logo.svg"></a>
-        <ul class="header-list">
-            <li class="header-list-item"><a href="/clients">Clients</a></li>
-            <li class="header-list-item"><a href="/contact">Contact</a></li>
-        </ul>
-    </div>
-</header>
-
-
-            <div class="container">
-                <div id="spacer-element" class="row content-highlight">
-
-                            <div class="content">
-            <div class="col-100 bottom-spacer">
-                <div class="page-hero-image">
-                    <h1>Contact us.</h1>
-                    <img src="http://placehold.it/1920x700">
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="col-50">
-                <div id="map"></div>
+<div id="map"></div>
 
     <script>
       function initMap() {
@@ -224,7 +171,7 @@
         // Create a map object, and include the MapTypeId to add
         // to the map type control.
         var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: , lng: },
+          center: {lat: {{ site.google-lat }}, lng: {{ site.google.lng }}},
           zoom: 11,
           mapTypeControlOptions: {
             mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
@@ -238,75 +185,4 @@
       }
     </script>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRhpw0XowL5SrsMHgf_ddDdGhE6VlE4yQ&callback=initMap"></script>            
-            </div>
-            <div class="col-50">
-                  <form id="contact" class="contact-form">
-
-      <input type="text" name="_gotcha" style="display: none">
-
-      <label>Full Name *</label>
-      <input id="inputName" type="text" name="name" placeholder="Enter your name..." required>
-
-      <label>Email Address *</label>
-      <input id="inputEmail" type="text" name="email" placeholder="Enter your email..." required>
-
-      <label>Your Subject</label>
-      <input id="inputSubject" type="text" name="subject" placeholder="Enter your subject...">
-
-      <label>Your Message</label>
-
-      <textarea id="inputMessage" name="message" placeholder="Enter your message..." rows="8" cols="30"></textarea>
-
-      <button type="submit" id="form-submit" value="Send">Send</button> 
-
-  </form>
-
-
-            </div>
-            <div class="clearfix"></div>        
-        </div>
-    </div>
-</div>
-
-
-                </div>
-            </div>
-
-        </main>
-
-    </body>
-</html>
-
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-50">
-                        <ul class="footer-list">
-                            <li class="footer-list-item"><a href="mailto:steve@inkfieldmedia.com">steve@inkfieldmedia.com</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-50 align-right">
-                        <ul class="footer-list">
-                            <li class="footer-list-item">+44 7587 977 848</li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </div>
-        </footer>
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="/scripts/all.min.js"></script>
-
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','','auto');ga('send','pageview');
-        </script>
-
-    </body>
-</html>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRhpw0XowL5SrsMHgf_ddDdGhE6VlE4yQ&callback=initMap"></script>
