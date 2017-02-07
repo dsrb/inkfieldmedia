@@ -3,13 +3,10 @@ title: About
 date: 2017-01-23 02:50:00 Z
 position: 1
 menu: main
-about-excerpt: We are a full service video production company who specialise in crafting
-  unforgettable commercial, TV & digital content.
 creative:
 - Idea Development
 - Scripting
 - Storyboarding
-- 
 production:
 - Video Production Services
 - Corporate Films
@@ -23,6 +20,8 @@ post:
 - Motion Graphics Design & Animation
 layout: about
 ---
+
+We are a full service video production company who specialise in crafting unforgettable commercial, TV & digital content.
 
 Established in London by award-winning Cinematographer Stephen Ribeiro, Inkfield Media has been producing content for the worlds leading brands, networks, agencies, charities and financial institutions since 2013.
 
