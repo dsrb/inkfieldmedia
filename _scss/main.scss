@@ -49,7 +49,7 @@ img {
 .content-highlight {
     color: $white;
     background-color: $navy;
-    padding: 1em 1em 3em 1em;
+    padding: 2em 1em
 }
 
 .content-work-thumbnail {
@@ -78,6 +78,7 @@ img {
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
     -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.6);
+    filter: none;
 }
 
 .content-client-thumbnail {
@@ -171,6 +172,26 @@ img {
         color: $black;
         text-transform: uppercase;
         font-size: 0.6em;
+    }
+
+}
+
+.page-hero-image {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    color: $white;
+    text-align: center;
+
+    h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        margin: 0;
+        padding: 0;
+        line-height: 2.4rem;
     }
 
 }
@@ -335,7 +356,7 @@ img {
 }
 
 .spacer {
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 #selected-clients-hide {
