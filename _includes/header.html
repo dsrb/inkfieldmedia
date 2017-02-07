@@ -1,7 +1,15 @@
+<div class="page-video-container">
+        <video class="header-video" autoplay muted loop>
+        <source poster="/uploads/video.jpg" src="/uploads/video.m4v" type="video/m4v">
+        <source poster="/uploads/video.jpg" src="/uploads/video.webm" type="video/webm">
+    </video>
+</div>
+
+
 <div id="sticky-anchor"></div><div id="spacer-anchor"></div>
 <header id="sticky-element" class="header">
     <div class="header-inner bg transition">
-        <a href="{{ site.baseurl }}" class="header-site-title">{{ site.title }}</a>
+        <a href="{{ site.baseurl }}" class="header-site-title"><img src="/assets/logo.svg"></a>
         <i class="material-icons md-48 header-menu-icon">menu</i>
         <ul class="header-list">
             {% assign sorted_pages = site.pages | sort:"position" %}
