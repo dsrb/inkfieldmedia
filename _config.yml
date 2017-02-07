@@ -26,7 +26,8 @@ defaults:
     type: pages
   values:
     menu: menu
-    about-excerpt: 
+    excerpt_text:
+    excerpt_image:
 - scope:
     path: ''
     type: work
