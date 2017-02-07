@@ -144,6 +144,7 @@ img {
     width: auto;
     height: auto;
     z-index: -100;
+    opacity: 0.5;
 }
 
 .page-video-container {
@@ -209,9 +210,6 @@ img {
     height: 200px;
     padding: 0 2.4rem;
     z-index: 10;
-}
-
-.header-site-title {
 }
 
 .header-list {
