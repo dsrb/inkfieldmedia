@@ -14,7 +14,7 @@ $grey: #eee;
 $black: #000;
 $white: #fff;
 
-// Layout //
+/* Layout */
 
 body {
     background-color: $white;
@@ -38,7 +38,7 @@ img {
     width: 100%;
 }
 
-// Content //
+/* Content */
 
 .container {
     max-width: 100em;
@@ -95,7 +95,7 @@ img {
     
 }
 
-// Video //
+/* Video */
 
 .header-video-container {
     position: relative;
@@ -182,6 +182,16 @@ img {
     padding: 0;
     color: $white;
     text-align: center;
+    overflow: hidden;
+
+    &:before {
+        content: "";
+        opacity: 0.7;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $navy;
+    }
 
     h1 {
         position: absolute;
@@ -196,7 +206,12 @@ img {
 
 }
 
-// Header //
+.page-hero-container {
+    background-color: $navy;
+    background-blend-mode: multiply;
+}
+
+/* Header */
 
 .header {
     margin: 0;
@@ -301,68 +316,6 @@ img {
     letter-spacing: 0.06em;
 }
 
-// Other //
-
-.material-icons {
-    display: block !important;
-    color: $black;
-    font-size: 2.6em !important;
-    @include transition (color, 200ms, ease);
-
-    &:hover {
-        color: $slate;
-    }
-
-}
-
-.header-menu-icon {
-    display: none !important;
-}
-
-.clearfix {
-    clear: both;
-}
-
-.bottom-spacer {
-    margin-bottom: 1em;
-}
-
-.no-spacing {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-*:focus {
-    outline: 0;
-}
-
-.align-left {
-    text-align: left;
-}
-
-.align-right {
-    text-align: right;
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    background-color: $white;
-    z-index: 15;
-}
-
-.spacer {
-    margin-top: 200px;
-}
-
-#selected-clients-hide {
-    display: none;
-}
-
 // Newsletter //
 
 .newsletter-form {
@@ -414,6 +367,8 @@ img {
 // Contact //
 
 .contact-form {
+    padding: 2em 2em 2em 1em;
+
     @extend .newsletter-form;
 
     input[type="radio"] {
@@ -476,20 +431,6 @@ img {
 
     }
 
-}
-
-.submit {
-    font-size: 0.6em;
-}
-
-.submit-fail {
-    color: #e74c3c;
-    font-size: 0.6em;
-}
-
-.submit-success {
-    color: #2ecc71;
-    font-size: 0.6em;
 }
 
 // Video //
@@ -597,13 +538,81 @@ section embed {
 
 }
 
-// Map //
+/* Map */
+
+.map-container {
+    padding: 2em 1em 2em 2em;
+}
 
 #map {
     width: 100%;
-    height: 50vh;
-    background-color: grey;
- }
+    height: 40vh;
+}
+
+
+/* Other */
+
+.material-icons {
+    display: block !important;
+    color: $black;
+    font-size: 2.6em !important;
+    @include transition (color, 200ms, ease);
+
+    &:hover {
+        color: $slate;
+    }
+
+}
+
+/* Spacing */
+
+.clearfix {
+    clear: both;
+}
+
+.bottom-spacer {
+    margin-bottom: 1em;
+}
+
+.no-spacing {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+*:focus {
+    outline: 0;
+}
+
+/* Alignment */
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+/* Sticky Scroll */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    background-color: $white;
+    z-index: 15;
+}
+
+.spacer {
+    margin-top: 200px;
+}
 
 // Columns // 
 
@@ -676,18 +685,41 @@ section embed {
     width: 100%;
 }
 
+/* Media Queries */
+
 @media screen and (max-width: 62rem) {
 
     body {
         font-size: 1rem;
     }
 
-    .col-25 {
-        width: 50%;
+    h1 {
+        font-size: 1.6em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .sticky {
+        padding: 0;
+    }
+
+    .video-pagination a {
+        width: 100%;
+        font-size: 0.6em;
+    }
+
+    .contact-form , .map-container {
+        padding: 1em 0;
     }
 
     .container {
         padding: 1rem;
+    }
+
+    .col-25 {
+        width: 50%;
     }
 
     .col-20, .col-50, .col-60, .col-75, .col-100 {
@@ -699,52 +731,14 @@ section embed {
     }
 
     .content-work-thumbnail {
-
-        img {
-            filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
-            filter: gray;
-            -webkit-filter: grayscale(0);
-        }
-
-    }
-
-    .sticky {
-        padding: 0;
-    }
-
-    .header-list {
-        display: none;
-    }
-
-    .header-list-item {
-        display: block;
-        padding: 0.8em 0;
-    }
-
-    .header-menu-icon {
-        display: -webkit-flex !important;
-        display: flex !important;
-        -webkit-flex-direction: row !important;
-        flex-direction: row !important;
-        -webkit-justify-content: flex-end !important;
-        justify-content: flex-end !important;
-    }
-
-    .video-pagination a {
-        width: 100%;
-        font-size: 0.6em;
-    }
-
-    h1 {
-        font-size: 1.6em;
-    }
-
-    p {
-        font-size: 0.8em;
-    }
-
-    .content-work-thumbnail {
         margin: 0 0 2em 0;
+
+            img {
+                filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+                filter: gray;
+                -webkit-filter: grayscale(0);
+            }
+
     }
 
 }

@@ -5,13 +5,15 @@ layout: default
         <div class="content">
             <div class="col-100 bottom-spacer">
                 <div class="page-hero-image">
-                    <h1>{{ page.about-excerpt }}</h1>
-                    <img src="http://placehold.it/1920x700">
+                    <h1>{{ page.excerpt_text }}</h1>
+                    <img src="{{ page.excerpt_image }}">
                 </div>
                 <div class="clearfix"></div>
             </div>
             <div class="col-50">
-                {% include map.html %}            
+                <div class="map-container">
+                    {% include map.html %}            
+                </div>
             </div>
             <div class="col-50">
                 {% include form.html %}

@@ -5,8 +5,8 @@ layout: default
         <div class="content">
             <div class="col-100 bottom-spacer">
                 <div class="page-hero-image">
-                    <h1>{{ page.about-excerpt }}</h1>
-                    <img src="http://placehold.it/1920x700">
+                    <h1>{{ page.excerpt_text }}</h1>
+                    <img src="{{ page.excerpt_image }}">
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -15,18 +15,6 @@ layout: default
             </div>
             <div class="col-50">
                 {{ content }}
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div id="selected-clients-hide" class="content bottom-spacer">
-            <div class="col-50">
-                <h2>Selected Clients</h2>
-            </div>
-            <div class="col-50">
-                {% assign sorted_clients = site.clients | sort:"position" %}
-                {% for clients in sorted_clients %}
-                    <p>{{ clients.title }}</p>
-                {% endfor %}
             </div>
             <div class="clearfix"></div>
         </div>
