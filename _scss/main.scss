@@ -254,14 +254,6 @@ img {
     list-style-type: none;
 }
 
-.header-list-mobile {
-    display: none;
-    margin: 0;
-    padding: 0 1em;
-    height: 100vh;
-    background-color: $white;
-}
-
 .header-list-item {
     display: inline-block;
     margin: 0 1.2em 0 0;
@@ -280,40 +272,19 @@ img {
 // Footer //
 
 .footer {
-    position: relative;
-    color: $black;
+    @extend .header;
+}
 
-    a {
-        color: $black;
-
-        &:hover {
-            color: $slate;
-        }
-
-    }
-
+.footer-inner {
+    @extend .header-inner;
 }
 
 .footer-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    @extend .header-list;
 }
 
 .footer-list-item {
-    padding: 0 0 0.4em 0;
-}
-
-.footer-copyright {
-    background-color: $white;
-}
-
-.footer-copyright-text {
-    margin: 0;
-    padding: 0;
-    color: $black;
-    font-size: 0.8em;
-    letter-spacing: 0.06em;
+    @extend .header-list-item;
 }
 
 // Newsletter //
