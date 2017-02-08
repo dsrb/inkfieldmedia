@@ -7,11 +7,9 @@ layout: default
             {% for work in sorted_work %}
             <div class="col-50">
                 <div class="content-work-thumbnail">
-                    <a href="{{ work.url }}">
-                        <img src="{{ work.thumbnail_image }}">
-                        <h2>{{ work.title }}</h2>
-                    </a>
+                    <img src="{{ work.thumbnail_image }}">
                 </div>
+                <h2>{{ work.title }}</h2>
             </div>
             {% endfor %}
             <div class="clearfix"></div>
