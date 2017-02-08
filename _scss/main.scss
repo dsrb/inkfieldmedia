@@ -54,7 +54,8 @@ img {
 
 .content-work-thumbnail {
     display: block; 
-    margin: 1em 0;
+    margin: 1em 0 0 0;
+    border: 2px solid $navy;
     @include transition (all, 200ms, ease);
     overflow: hidden;
 
@@ -66,6 +67,7 @@ img {
     }
 
     &:hover {
+        border: 2px solid $white;
         cursor: pointer; 
         transform: scale(1); 
         @include transition (all, 200ms, ease);
@@ -77,6 +79,27 @@ img {
         @include transition (all, 200ms, ease);
         -webkit-filter: grayscale(0%);
         filter: none;
+    }
+
+    &:hover + span {
+        color: $navy;
+        background-color: $white;
+    }
+
+}
+
+.content-work-link {
+
+    span {
+        display: block;
+        width: 100%;
+        color: $white;
+        margin: 0 0 1em 0;
+        padding: 0.6em;
+        border: 2px solid transparent;
+        border-top: none;
+        text-transform: uppercase;
+        @include transition (all, 200ms, ease);
     }
 
 }
@@ -756,6 +779,14 @@ section embed {
 }
 
 @media screen and (max-width: 32rem) {
+
+    .header-inner {
+        height: 100px;
+    }
+
+    .header-list {
+        display: none;
+    }
 
     .col-25 {
         width: 100%;
