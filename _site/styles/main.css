@@ -570,7 +570,7 @@ a {
   transition: color, 200ms, ease; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "DINPro-Medium", sans-serif;
+  font-family: "DINPro-Light", sans-serif;
   font-weight: bold; }
 
 img {
@@ -697,13 +697,32 @@ img {
     width: 70%;
     margin: 0;
     padding: 0;
-    line-height: 2.4rem; }
+    line-height: 2.6rem; }
+  .page-hero-image img {
+    opacity: 0.15;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); }
 
 .page-hero-container {
   background-color: #2e343d;
   background-blend-mode: multiply; }
 
 /* Header */
+.header-video-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .header-video-menu li {
+    padding: 0 1em; }
+
 .header, .footer {
   margin: 0;
   padding: 0;
@@ -756,7 +775,7 @@ img {
   font-size: 0.8em;
   letter-spacing: 0.06em; }
   .newsletter-form input:focus, .contact-form input:focus {
-    font-family: "DINPro-Medium", sans-serif; }
+    font-family: "DINPro-Light", sans-serif; }
 
 .newsletter-form label, .contact-form label {
   margin: 0 0 0.6em 0;
@@ -808,7 +827,7 @@ img {
     font-size: 0.8em;
     letter-spacing: 0.06em; }
     .contact-form textarea:focus {
-      font-family: "DINPro-Medium", sans-serif; }
+      font-family: "DINPro-Light", sans-serif; }
   .contact-form button {
     color: #fff;
     border: 2px solid #fff; }
@@ -908,6 +927,7 @@ section embed {
 /* Other */
 .material-icons {
   display: block !important;
+  padding: 0.2em;
   color: #000;
   font-size: 2.6em !important;
   transition: color, 200ms, ease; }
