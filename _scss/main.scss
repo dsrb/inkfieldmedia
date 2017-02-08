@@ -3,8 +3,8 @@
 @import "reset";
 @import "fonts";
 
-$regular: 'Graphik-Regular', sans-serif;
-$medium: 'Graphik-Medium', sans-serif;
+$regular: 'DINPro-Light', sans-serif;
+$medium: 'DINPro-Medium', sans-serif;
 
 $navy: #2e343d;
 $slate: #a9a9a9;
@@ -19,7 +19,7 @@ $white: #fff;
 body {
     background-color: $white;
     font-family: $regular;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.8rem;
     letter-spacing: 0.02em;
 }
@@ -31,7 +31,7 @@ a {
 
 h1, h2, h3, h4, h5 {
     font-family: $medium;
-    font-weight: normal;
+    font-weight: bold;
 }
 
 img {

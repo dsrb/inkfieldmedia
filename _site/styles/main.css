@@ -543,11 +543,25 @@ textarea {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'DINPro-Light';
+  src: url("/assets/DINPro-Light.eot");
+  src: url("/assets/DINPro-Light.eot?#iefix") format("embedded-opentype"), url("/assets/DINPro-Light.woff") format("woff"), url("/assets/DINPro-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'DINPro-Medium';
+  src: url("/assets/DINPro-Medium.eot");
+  src: url("/assets/DINPro-Medium.eot?#iefix") format("embedded-opentype"), url("/assets/DINPro-Medium.woff") format("woff"), url("/assets/DINPro-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 /* Layout */
 body {
   background-color: #fff;
-  font-family: "Graphik-Regular", sans-serif;
-  font-size: 1rem;
+  font-family: "DINPro-Light", sans-serif;
+  font-size: 1.2rem;
   line-height: 1.8rem;
   letter-spacing: 0.02em; }
 
@@ -556,8 +570,8 @@ a {
   transition: color, 200ms, ease; }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Graphik-Medium", sans-serif;
-  font-weight: normal; }
+  font-family: "DINPro-Medium", sans-serif;
+  font-weight: bold; }
 
 img {
   width: 100%; }
@@ -742,7 +756,7 @@ img {
   font-size: 0.8em;
   letter-spacing: 0.06em; }
   .newsletter-form input:focus, .contact-form input:focus {
-    font-family: "Graphik-Medium", sans-serif; }
+    font-family: "DINPro-Medium", sans-serif; }
 
 .newsletter-form label, .contact-form label {
   margin: 0 0 0.6em 0;
@@ -794,7 +808,7 @@ img {
     font-size: 0.8em;
     letter-spacing: 0.06em; }
     .contact-form textarea:focus {
-      font-family: "Graphik-Medium", sans-serif; }
+      font-family: "DINPro-Medium", sans-serif; }
   .contact-form button {
     color: #fff;
     border: 2px solid #fff; }
