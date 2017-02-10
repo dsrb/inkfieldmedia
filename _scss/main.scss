@@ -117,21 +117,15 @@ img {
     text-align: center;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: column;
+    flex-direction: column;
     -webkit-align-items: center;
     align-items: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
 
     img {
-        max-width: 150px;
-    }
-
-    a {
-        color: $black;
-        text-transform: uppercase;
-        font-size: 0.6em;
+        max-width: 300px;
     }
 
 }
@@ -143,6 +137,16 @@ img {
     max-width: 140px;
     width: 100%;
     padding: 1em;
+}
+
+.header-video-top {
+    position: fixed;
+    top: 0;
+
+    a {
+        color: $black;
+    }
+    
 }
 
 
@@ -229,6 +233,7 @@ img {
         margin: 0;
         padding: 0;
         line-height: 2.8rem;
+        z-index: 10;
     }
 
     img {
@@ -609,9 +614,14 @@ section embed {
     @include transition (color, 200ms, ease);
 
     &:hover {
-        color: $slate;
+        color: $navy;
+        font-size: 3.4em !important;
     }
 
+}
+
+.material-icon:hover svg {
+    fill: #444;
 }
 
 /* Spacing */
