@@ -642,10 +642,12 @@ img {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -ms-flex-pack: center;
+      justify-content: center; }
   .header-video-container img {
     max-width: 300px; }
+  .header-video-container a {
+    color: #000; }
 
 .header-logo {
   position: absolute;
@@ -746,8 +748,8 @@ img {
       flex-direction: row;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: center;
+      justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none; }

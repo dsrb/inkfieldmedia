@@ -121,11 +121,15 @@ img {
     flex-direction: column;
     -webkit-align-items: center;
     align-items: center;
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
+    -webkit-justify-content: center;
+    justify-content: center;
 
     img {
         max-width: 300px;
+    }
+
+    a {
+        color: $black;
     }
 
 }
@@ -253,8 +257,8 @@ img {
     flex-direction: row;
     -webkit-align-items: center;
     align-items: center;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
+    -webkit-justify-content: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -262,6 +266,7 @@ img {
     li {
         padding: 0 1em;
     }
+
 }
 
 .header {
