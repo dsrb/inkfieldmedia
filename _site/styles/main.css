@@ -733,9 +733,7 @@ img {
     line-height: 2.8rem;
     z-index: 10; }
   .page-hero-image img {
-    opacity: 0.15;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); }
+    opacity: 0.15; }
 
 .page-hero-container {
   background-color: #2e343d;
