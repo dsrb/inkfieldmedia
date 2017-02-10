@@ -32,6 +32,7 @@ a {
 h1, h2, h3, h4, h5 {
     font-family: $medium;
     font-weight: bold;
+    line-height: 1.4em;
 }
 
 img {
@@ -48,14 +49,14 @@ img {
 
 .content-highlight {
     color: $white;
-    background-color: $navy;
+    background-color: rgba(46, 52, 61, 0.75);
     padding: 2em 1em
 }
 
 .content-work-thumbnail {
     display: block; 
     margin: 1em 0 0 0;
-    border: 2px solid $navy;
+    border: 2px solid transparent;
     @include transition (all, 200ms, ease);
     overflow: hidden;
 
@@ -269,7 +270,7 @@ img {
     letter-spacing: 0.06em;
 
     img {
-        max-width: 120px;
+        max-width: 300px;
     }
 
     a {
@@ -283,18 +284,21 @@ img {
 
 }
 
+.header-site-title {
+    padding: 1em;
+}
+
 .header-inner {
     @extend .container;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: column;
+    flex-direction: column;
     -webkit-align-items: center;
     align-items: center;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    height: 200px;
-    padding: 0 2.4rem;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 2.4rem 2.4rem 0 2.4rem;
     z-index: 10;
 }
 
@@ -306,8 +310,8 @@ img {
 
 .header-list-item {
     display: inline-block;
-    margin: 0 1.2em 0 0;
-    padding: 0;
+    margin: 0;
+    padding: 1em;
 
     &:last-child {
         margin: 0;
@@ -327,6 +331,9 @@ img {
 
 .footer-inner {
     @extend .header-inner;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 0 2.4rem 2.4rem 2.4rem;
 }
 
 .footer-list {
@@ -460,7 +467,7 @@ section {
     position: relative;
     max-width: 100%;
     height: auto;
-    margin: 1.4em 0 0 0;
+    margin: 0;
     padding-bottom: 56.25%;
     overflow: hidden;
 }
@@ -519,6 +526,10 @@ section embed {
 }
 
 .play {
+
+    img {
+        max-width: 300px;
+    }
 
     span {
         font-size: 0.8em;
@@ -754,6 +765,14 @@ section embed {
         padding: 1rem;
     }
 
+    .header-inner {
+        padding: 1em 1em 0 1em;
+    }
+
+    .footer-inner {
+        padding: 0 1em 1em 1em;
+    }
+
     .col-25 {
         width: 50%;
     }
@@ -779,10 +798,6 @@ section embed {
 }
 
 @media screen and (max-width: 32rem) {
-
-    .header-inner {
-        height: 100px;
-    }
 
     .header-list {
         display: none;
