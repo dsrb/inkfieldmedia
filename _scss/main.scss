@@ -99,7 +99,7 @@ img {
         padding: 0.6em;
         border: 2px solid transparent;
         border-top: none;
-        text-transform: uppercase;
+        text-transform: capitalize;
         @include transition (all, 200ms, ease);
     }
 
