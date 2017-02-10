@@ -163,6 +163,7 @@ img {
 }
 
 .header-video-poster {
+    display: none;
     position: fixed;
     right: 0;
     bottom: 0;
@@ -792,6 +793,10 @@ section embed {
 
     .header-inner {
         padding: 1em 1em 0 1em;
+    }
+
+    .header-video-poster {
+        display: block;
     }
 
     .footer-inner {
