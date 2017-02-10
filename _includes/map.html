@@ -1,11 +1,12 @@
 <div id="map"></div>
 
-    <script>
-      function initMap() {
+<script>
 
-        // Create a new StyledMapType object, passing it an array of styles,
-        // and the name to be displayed on the map type control.
-        var styledMapType = new google.maps.StyledMapType(
+  function initMap() {
+
+    // Create a new StyledMapType object, passing it an array of styles,
+    // and the name to be displayed on the map type control.
+    var styledMapType = new google.maps.StyledMapType(
         [
           {
             "elementType": "geometry",
@@ -166,23 +167,39 @@
             ]
           }
         ],
-            {name: 'Styled Map'});
+        {name: 'Styled Map'});
 
-        // Create a map object, and include the MapTypeId to add
-        // to the map type control.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: {{ site.google-lat }}, lng: {{ site.google-lng }}},
-          zoom: 11,
-          mapTypeControlOptions: {
-            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
-                    'styled_map']
-          }
-        });
+    var myLatlng = new google.maps.LatLng({{ site.google-lat }},{{ site.google-lng }});
 
-        //Associate the styled map with the MapTypeId and set it to display.
-        map.mapTypes.set('styled_map', styledMapType);
-        map.setMapTypeId('styled_map');
-      }
-    </script>
+    var mapOptions = {
+        zoom: 15,
+        center: myLatlng,
+        disableDefaultUI: true,
+        scrollwheel: false,
+        mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain', 'styled_map']
+        }
+    }
+
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        title: 'Inkfield Media Marker',
+        icon: {
+            url: '/assets/icon.svg',
+            scaledSize: new google.maps.Size(40, 40),
+        }
+    });
+
+    // To add the marker to the map, call setMap();
+    marker.setMap(map);
+
+    //Associate the styled map with the MapTypeId and set it to display.
+    map.mapTypes.set('styled_map', styledMapType);
+    map.setMapTypeId('styled_map');
+  }
+
+</script>
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRhpw0XowL5SrsMHgf_ddDdGhE6VlE4yQ&callback=initMap"></script>
