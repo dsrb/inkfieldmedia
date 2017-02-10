@@ -4,7 +4,7 @@ date: 2017-01-23 02:50:00 Z
 position: 1
 menu: main
 excerpt_text: We are a full service video production company who specialise in crafting
-  unforgettable commercial, TV & digital content.
+  unforgettable commercial, TV & digital content
 excerpt_image: "/uploads/collage.jpg"
 creative:
 - Idea Development
