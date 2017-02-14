@@ -17,7 +17,6 @@ $white: #fff;
 /* Layout */
 
 body {
-    background-color: $white;
     font-family: $regular;
     font-size: 1.2rem;
     line-height: 1.8rem;
@@ -32,7 +31,6 @@ a {
 h1, h2, h3, h4, h5 {
     font-family: $medium;
     font-weight: bold;
-    line-height: 1.4em;
 }
 
 img {
@@ -738,7 +736,7 @@ section embed {
     padding: 0.8em;
  }
 
-.col-20, .col-25, .col-50, .col-60, .col-75, .col-100 {
+.col-20, .col-25, .col-40, .col-50, .col-60, .col-75, .col-100 {
     float: left;
     padding: 0 0.8em;
 }
@@ -753,6 +751,10 @@ section embed {
 
 .col-30 {
     width: 33.33%;
+}
+
+.col-40 {
+    width: 40%;
 }
 
 .col-50 {
@@ -830,11 +832,7 @@ section embed {
         padding: 0 1em 1em 1em;
     }
 
-    .col-25 {
-        width: 50%;
-    }
-
-    .col-20, .col-50, .col-60, .col-75, .col-100 {
+    .col-20, .col-25, .col-50, .col-60, .col-75, .col-100 {
         width: 100%;
     }
 
@@ -858,10 +856,6 @@ section embed {
 
     .header-list {
         display: none;
-    }
-
-    .col-25 {
-        width: 100%;
     }
 
     .page-hero-image h1 {
