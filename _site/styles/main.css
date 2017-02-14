@@ -868,7 +868,7 @@ img {
     background-color: #000; }
 
 .contact-form {
-  padding: 2em 2em 2em 1em; }
+  padding: 1.4em 2em 2em 1em; }
   .contact-form input[type="radio"] {
     display: none; }
   .contact-form input[type="radio"] + label {
