@@ -153,11 +153,12 @@ img {
 
 }
 
-
 .header-video {
     position: fixed;
-    right: 0;
+    top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -169,8 +170,10 @@ img {
 .header-video-poster {
     display: none;
     position: fixed;
-    right: 0;
+    top: 0;
     bottom: 0;
+    left: 0;
+    right: 0;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -215,17 +218,25 @@ img {
 .page-hero-image {
     position: relative;
     width: 100%;
-    padding: 0;
+    margin: 2.4rem 0 0 0;
     color: $white;
     text-align: center;
     overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
 
     &:before {
         content: "";
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: rgba(46, 52, 61, 0.2);
+        /* background-color: rgba(46, 52, 61, 0.2); */
     }
 
     h1 {
@@ -233,15 +244,16 @@ img {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 70%;
         margin: 0;
-        padding: 0;
+        border-radius: 0.2em;
+        padding: 0.4em;
+        background-color: rgba(46, 52, 61, 0.75);
         line-height: 2.8rem;
+        text-transform: uppercase;
         z-index: 10;
     }
 
     span {
-        background-color: $black;
         text-transform: uppercase;
         line-height: 1.4em;
     }
@@ -556,10 +568,14 @@ section embed {
     display: none;
 }
 
+.play-container {
+    width: 100%;
+}
+
 .play {
 
     img {
-        max-width: 300px;
+        max-width: 360px;
     }
 
     span {
