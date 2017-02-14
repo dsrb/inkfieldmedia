@@ -45,6 +45,10 @@ img {
     padding: 2.4rem;
 }
 
+.container-work {
+    padding: 0 2.4rem 2.4rem 2.4rem;
+}
+
 .content-highlight {
     color: $white;
     background-color: rgba(46, 52, 61, 0.75);
@@ -216,7 +220,7 @@ img {
 .page-hero-image {
     position: relative;
     width: 100%;
-    margin: 2.4rem 0 0 0;
+    margin: 0;
     color: $white;
     text-align: center;
     overflow: hidden;
@@ -317,7 +321,7 @@ img {
     align-items: center;
     -webkit-justify-content: center;
     justify-content: center;
-    padding: 2.4rem 2.4rem 0 2.4rem;
+    padding: 2.4rem;
     z-index: 10;
 }
 
@@ -820,8 +824,12 @@ section embed {
         padding: 1rem;
     }
 
+    .container-work {
+        padding: 0 1rem 1rem 1rem;
+    }
+
     .header-inner {
-        padding: 1em 1em 0 1em;
+        padding: 1em;
     }
 
     .header-video-poster {
