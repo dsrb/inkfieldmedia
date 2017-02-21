@@ -6,7 +6,13 @@ layout: default
             <div class="col-50">
                 <div class="map-container">
                     {% include map.html %}
-                    <p>{{ site.address-line-1 }}</p>
+                    <p>
+                        </ul>
+                            <li>{{ site.address-line-1 }}</li>
+                            <li>{{ site.address-line-2 }}</li>
+                            <li>{{ site.address-line-3 }}</li>
+                        </ul>
+                    </p>
                     <p>{{ site.email }}</p>
                     <p>{{ site.mobile }}</p>
                 </div>

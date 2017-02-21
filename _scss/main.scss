@@ -249,7 +249,7 @@ img {
         margin: 0;
         border-radius: 0.2em;
         padding: 0.4em;
-        background-color: rgba(46, 52, 61, 0.75);
+        background-color: rgba(46, 52, 61, 0.85);
         line-height: 2.8rem;
         text-transform: uppercase;
         z-index: 10;
@@ -379,6 +379,11 @@ img {
     -webkit-justify-content: center;
     justify-content: center;
     padding: 0 2.4rem 2.4rem 2.4rem;
+
+    p {
+        font-size: 0.8em;
+    }
+
 }
 
 .footer-list {
@@ -623,6 +628,12 @@ section embed {
 
 .map-container {
     padding: 2em 1em 2em 2em;
+
+    ul, li {
+        @extend .no-spacing;
+        list-style-type: none;
+    }
+
 }
 
 #map {
@@ -798,7 +809,7 @@ section embed {
         font-size: 1.6em;
     }
 
-    p {
+    p, ul, li {
         font-size: 0.8em;
     }
 
