@@ -2,29 +2,32 @@
 layout: default
 ---
 
-        <div class="content align-center">
-            <div class="col-100">
+        <div class="content">
+            <div class="col-25">
                 <h2>About Us</h2>
             </div>
-            <div class="col-100">
+            <div class="col-75">
                 {{ content }}
             </div>
             <div class="clearfix"></div>
         </div>
-        <div class="content align-center bottom-spacer">
-            <div class="col-30">
+        <div class="content bottom-spacer">
+            <div class="col-25">
+                <h2>Services</h2>
+            </div>
+            <div class="col-20">
                 <h2>Creative</h2>
                 {% for service in page.creative %}
                     <p>{{ service }}</p>
                 {% endfor %}
             </div>
-            <div class="col-30">
+            <div class="col-25">
                 <h2>Production</h2>
                 {% for service in page.production %}
                     <p>{{ service }}</p>
                 {% endfor %}
             </div>
-            <div class="col-30">
+            <div class="col-25">
                 <h2>Post Production</h2>
                 {% for service in page.post %}
                     <p>{{ service }}</p>
