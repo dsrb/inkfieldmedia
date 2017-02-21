@@ -790,6 +790,14 @@ section embed {
 
 /* Media Queries */
 
+@media screen and (min-width: 80rem) {
+
+    .align-center {
+        padding: 0 10rem;
+    }
+
+}
+
 @media screen and (max-width: 80rem) {
 
     .page-hero-image h1 {
@@ -809,7 +817,28 @@ section embed {
         font-size: 1.6em;
     }
 
-    p, ul, li {
+    p {
+        font-size: 0.8em;
+    }
+
+    .header img {
+        max-width: 200px;
+    }
+
+    .header-list-item {
+        margin: 0 0.8em 0 0;
+    }
+
+    .header-inner {
+        margin: 0 0.4em 0 0;
+        font-size: 0.9em;
+    }
+    
+    .map-container ul {
+        font-size: 0.8em;
+    }   
+
+    .map-container li {
         font-size: 0.8em;
     }
 
@@ -851,12 +880,8 @@ section embed {
         padding: 0 1em 1em 1em;
     }
 
-    .col-20, .col-25, .col-50, .col-60, .col-75, .col-100 {
+    .col-20, .col-25, .col-30, .col-50, .col-60, .col-75, .col-100 {
         width: 100%;
-    }
-
-    .col-30 {
-        width: 50%;
     }
 
     .content-work-thumbnail {
@@ -872,10 +897,6 @@ section embed {
 }
 
 @media screen and (max-width: 32rem) {
-
-    .header-list {
-        display: none;
-    }
 
     .page-hero-image h1 {
         font-size: 0.6em;

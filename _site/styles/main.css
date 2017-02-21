@@ -1111,6 +1111,10 @@ section embed {
   width: 100%; }
 
 /* Media Queries */
+@media screen and (min-width: 80rem) {
+  .align-center {
+    padding: 0 10rem; } }
+
 @media screen and (max-width: 80rem) {
   .page-hero-image h1 {
     font-size: 1.2em;
@@ -1121,7 +1125,18 @@ section embed {
     font-size: 1rem; }
   h1 {
     font-size: 1.6em; }
-  p, ul, li {
+  p {
+    font-size: 0.8em; }
+  .header img, .footer img {
+    max-width: 200px; }
+  .header-list-item, .footer-list-item {
+    margin: 0 0.8em 0 0; }
+  .header-inner, .footer-inner {
+    margin: 0 0.4em 0 0;
+    font-size: 0.9em; }
+  .map-container ul {
+    font-size: 0.8em; }
+  .map-container li {
     font-size: 0.8em; }
   .sticky {
     padding: 0; }
@@ -1143,18 +1158,14 @@ section embed {
     display: block; }
   .footer-inner {
     padding: 0 1em 1em 1em; }
-  .col-20, .col-25, .col-50, .col-60, .col-75, .col-100 {
+  .col-20, .col-25, .col-30, .col-50, .col-60, .col-75, .col-100 {
     width: 100%; }
-  .col-30 {
-    width: 50%; }
   .content-work-thumbnail img {
     filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
     filter: gray;
     -webkit-filter: grayscale(0); } }
 
 @media screen and (max-width: 32rem) {
-  .header-list, .footer-list {
-    display: none; }
   .page-hero-image h1 {
     font-size: 0.6em;
     line-height: 1.4rem; } }
