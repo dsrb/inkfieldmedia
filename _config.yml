@@ -49,8 +49,9 @@ defaults:
 email: info@inkfieldmedia.com
 mobile: "+44 7587 977 848"
 address-line-1: 25 Hill Street
-address-line-2: Mayfair W1J 5LW
-address-line-3: London
+address-line-2: Mayfair
+address-line-3: W1J 5LW
+address-line-4: London
 copyright: Inkfield Media © 2017
 google-analytics: 
 google-lat: 51.508565
