@@ -3,10 +3,10 @@
       <input type="text" name="_gotcha" style="display: none">
 
       <label>Full Name *</label>
-      <input id="inputName" type="text" name="name" placeholder="Enter your name..." required>
+      <input id="inputName" type="text" name="name" placeholder="Enter your name...">
 
       <label>Email Address *</label>
-      <input id="inputEmail" type="text" name="email" placeholder="Enter your email..." required>
+      <input id="inputEmail" type="text" name="email" placeholder="Enter your email...">
 
       <label>Your Subject</label>
       <input id="inputSubject" type="text" name="subject" placeholder="Enter your subject...">
@@ -17,5 +17,41 @@
 
       <button type="submit" id="form-submit" value="Send">Send</button> 
 
+      <div class="submit-fail display-none">Please fill in all form fields.</div>
+      <div class="submit-success display-none">Your message has been sent!</div>
+
   </form>
 
+<script>
+
+  $(document).ready(function() {
+    $('#contact').submit(function(e) {
+        var name = $('#inputName')
+        var email = $('#inputEmail')
+        var subject = $('#inputSubject')
+        var message = $('#inputMessage')
+      
+        if(name.val() == "" || email.val() == "" || subject.val() == "" || message.val() == "") {
+          $('.submit-fail').fadeToggle(400);
+          return false;
+        }
+        else {
+          $.ajax({
+            method: 'POST',
+            url: '//formspree.io/mayzjjnm',
+            data: $('#contact-form').serialize(),
+            datatype: 'json'
+          });
+          e.preventDefault();
+          $(this).get(0).reset();
+          $('.submit-success').fadeToggle(400);
+        }
+      });
+    
+    $('.submit-fail, .submit-success').click(function() {
+      $(this).hide();
+    })
+  });
+  
+
+</script>

@@ -788,6 +788,22 @@ section embed {
     width: 100%;
 }
 
+.display-none {
+    display: none;
+}
+
+.submit-success {
+    color: #2ecc71;
+    margin: 0.6em 0;
+    font-size: 0.8em;
+}
+
+.submit-fail {
+    color: #e74c3c;
+    margin: 0.6em 0;
+    font-size: 0.8em;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 80rem) {
