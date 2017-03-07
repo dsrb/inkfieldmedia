@@ -5,7 +5,7 @@ position: 1
 menu: main
 excerpt_text: We are a full service video production company who specialise in crafting
   unforgettable commercial, TV & digital content
-excerpt_image: "/uploads/about-banner.png"
+excerpt_image: "/uploads/about-banner.jpg"
 creative:
 - Idea Development
 - Scripting
