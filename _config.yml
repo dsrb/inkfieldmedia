@@ -57,7 +57,7 @@ google-analytics:
 google-lat: 51.508565
 google-lng: -0.148539
 showreel-video-id: 196885914
-baseurl: 
+baseurl: http://inkfieldmedia.com
 description: 
 permalink: pretty
 markdown: redcarpet
