@@ -1,32 +1,46 @@
-  <form id="contact" class="contact-form" action="https://formspree.io/xzzyynjx" method="POST">
 
-      <input type="text" name="_gotcha" style="display: none">
 
-      <label>Full Name *</label>
-      <input id="inputName" type="text" name="name" placeholder="Enter your name...">
+<form id="contactForm" class="contact-form" action="https://formspree.io/xkgynqpx" method="POST"> 
 
-      <label>Email Address *</label>
-      <input id="inputEmail" type="text" name="email" placeholder="Enter your email...">
+  <input type="text" name="_gotcha" style="display: none"> 
 
-      <label>Your Subject</label>
-      <input id="inputSubject" type="text" name="subject" placeholder="Enter your subject...">
+  <label>Full Name *</label>
+  <input id="inputName" type="text" name="name" placeholder="Enter your name...">
 
-      <label>Your Message</label>
+  <label>Email Address *</label>
+  <input id="inputEmail" type="text" name="email" placeholder="Enter your email...">
 
-      <textarea id="inputMessage" name="message" placeholder="Enter your message..." rows="8" cols="30"></textarea>
+  <label>Your Subject</label>
+  <input id="inputSubject" type="text" name="subject" placeholder="Enter your subject...">
 
-      <button type="submit" id="form-submit" value="Send">Send</button> 
+  <label>Your Message</label>
+  <textarea id="inputMessage" name="message" placeholder="Enter your message..." rows="8" cols="30"></textarea>
 
-      <div class="submit-fail display-none">Please fill in all form fields.</div>
-      <div class="submit-success display-none">Your message has been sent!</div>
+  <button id="sendMessage" type="submit">Send</button>
 
-  </form>
+  <div class="submit-fail display-none">Please fill in all form fields.</div>
+  <div class="submit-success display-none">Your message has been sent!</div>
 
-  <script type="text/javascript">
+</form>
 
-    $('#form-submit').click(function(){
-      alert('Please wait while form is submitting');
-      $('#contact').submit();
-    });
+<!---
 
-  </script>
+<script>
+  
+  var message = "";
+
+  $("#sendMessage").on("click", function() {
+      message = $("#contactForm").serialize();
+      $.ajax({
+          url: "//formspree.io/info@inkfieldmedia.com", 
+          method: "POST",
+          data: {message: message},
+          dataType: "json"
+      });
+      $('.submit-success').show();
+      return false;
+  });
+
+</script>
+
+-->

@@ -101,38 +101,52 @@
                 </div>
             </div>
             <div class="col-50">
-                  <form id="contact" class="contact-form" action="https://formspree.io/xzzyynjx" method="POST">
+                
 
-      <input type="text" name="_gotcha" style="display: none">
+<form id="contactForm" class="contact-form" action="https://formspree.io/xkgynqpx" method="POST"> 
 
-      <label>Full Name *</label>
-      <input id="inputName" type="text" name="name" placeholder="Enter your name...">
+  <input type="text" name="_gotcha" style="display: none"> 
 
-      <label>Email Address *</label>
-      <input id="inputEmail" type="text" name="email" placeholder="Enter your email...">
+  <label>Full Name *</label>
+  <input id="inputName" type="text" name="name" placeholder="Enter your name...">
 
-      <label>Your Subject</label>
-      <input id="inputSubject" type="text" name="subject" placeholder="Enter your subject...">
+  <label>Email Address *</label>
+  <input id="inputEmail" type="text" name="email" placeholder="Enter your email...">
 
-      <label>Your Message</label>
+  <label>Your Subject</label>
+  <input id="inputSubject" type="text" name="subject" placeholder="Enter your subject...">
 
-      <textarea id="inputMessage" name="message" placeholder="Enter your message..." rows="8" cols="30"></textarea>
+  <label>Your Message</label>
+  <textarea id="inputMessage" name="message" placeholder="Enter your message..." rows="8" cols="30"></textarea>
 
-      <button type="submit" id="form-submit" value="Send">Send</button> 
+  <button id="sendMessage" type="submit">Send</button>
 
-      <div class="submit-fail display-none">Please fill in all form fields.</div>
-      <div class="submit-success display-none">Your message has been sent!</div>
+  <div class="submit-fail display-none">Please fill in all form fields.</div>
+  <div class="submit-success display-none">Your message has been sent!</div>
 
-  </form>
+</form>
 
-  <script type="text/javascript">
+<!---
 
-    $('#form-submit').click(function(){
-      alert('Please wait while form is submitting');
-      $('#contact').submit();
-    });
+<script>
+  
+  var message = "";
 
-  </script>
+  $("#sendMessage").on("click", function() {
+      message = $("#contactForm").serialize();
+      $.ajax({
+          url: "//formspree.io/info@inkfieldmedia.com", 
+          method: "POST",
+          data: {message: message},
+          dataType: "json"
+      });
+      $('.submit-success').show();
+      return false;
+  });
+
+</script>
+
+-->
             </div>
             <div class="clearfix"></div>        
         </div>
