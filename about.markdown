@@ -24,7 +24,7 @@ post:
 layout: about
 ---
 
-Established in London by award-winning Cinematographer Stephen Ribeiro, Inkfield Media has been producing content for the worlds leading brands, networks, agencies, charities and financial institutions since 2013.
+Established in London by award-winning Cinematographer Stephen Ribeiro, Inkfield Media has been producing content for the world's leading brands, networks, agencies, charities and financial institutions since 2013.
 
 Being passionate storytellers, we aim to create original films we can be proud of. As a result of this, our exceptionally creative team of thinkers, artists and dreamers carefully craft our work with love and attention to detail, all with the goal of delivering visually stunning films that leave a lasting impression on our audience, as well as the clients we collaborate with.
 
