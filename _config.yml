@@ -33,11 +33,9 @@ defaults:
     type: work
   values:
     permalink: "/work/:title/"
-    link: 
     layout: fullscreen
     thumbnail_image: 
     video_number: 
-    homepage_feature: 
 - scope:
     path: ''
     type: clients
