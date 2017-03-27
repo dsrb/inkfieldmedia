@@ -2,9 +2,8 @@
 title: 'Always #LikeAGirl Campaign'
 date: 2017-01-23 04:52:00 Z
 position: 0
-link: https://vimeo.com/199299417
 thumbnail_image: "/uploads/image_004.png"
-video-number: 199299417
+video_number: 199299417
 ---
 
 Director: Jack Davidson<br>
