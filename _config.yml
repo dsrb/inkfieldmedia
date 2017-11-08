@@ -46,14 +46,14 @@ defaults:
     logo_image: 
 email: info@inkfieldmedia.com
 mobile: "+44 7587 977 848"
-address-line-1: 25 Hill Street
-address-line-2: Mayfair
-address-line-3: W1J 5LW
+address-line-1: 49a Grove Lane
+address-line-2: Camberwell
+address-line-3: SE5 8SP
 address-line-4: London
 copyright: Inkfield Media © 2017
 google-analytics: UA-76642996-6
-google-lat: 51.508565
-google-lng: -0.148539
+google-lat: 51.4717418
+google-lng: -0.0905045
 showreel-video-id: 196885914
 baseurl: http://inkfieldmedia.com
 description: 
