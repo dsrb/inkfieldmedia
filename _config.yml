@@ -46,11 +46,11 @@ defaults:
     logo_image: 
 email: info@inkfieldmedia.com
 mobile: "+44 7587 977 848"
-address-line-1: 49a Grove Lane
-address-line-2: Camberwell
-address-line-3: SE5 8SP
+address-line-1: 22 Alpha House
+address-line-2: 4 Beta Place
+address-line-3: SW4-7QN
 address-line-4: London
-copyright: Inkfield Media © 2017
+copyright: Inkfield Media © 2018
 google-analytics: UA-76642996-6
 google-lat: 51.4717418
 google-lng: -0.0905045
