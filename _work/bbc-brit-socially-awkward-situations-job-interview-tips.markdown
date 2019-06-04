@@ -1,15 +1,12 @@
 ---
-title: BBC Brit - Socially Awkward Situations - Job Interview Tips
+title: Visit Britain - Yorkshire
 date: 2017-01-23 04:50:00 Z
-position: 5
-thumbnail_image: "/uploads/image_006.png"
-video_number: 199659355
+position: 0
+thumbnail_image: "/uploads/Copy%20of%201200px%20%C3%97%20675px%20%E2%80%93%20Untitled%20Design.png"
+video_number: 273101733
 ---
 
-Director: Dipak Patel<br>
-Producer: Jack Belford<br>
-Production: Inkfield Media<br>
+Director: Steven Ellis<br>
 DP: Stephen Ribeiro<br>
-Sound: Terry Hird<br>
-Post Production: Dipak Patel, Jack Belford<br>
-Client: BBC Worldwide<br>
+Post Production: Storyman<br>
+Client: Visit Britain<br>

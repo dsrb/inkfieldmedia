@@ -1,7 +1,7 @@
 ---
 title: Emelie Forsberg - Skyrunner
 date: 2017-03-30 10:04:00 Z
-position: 2
+position: 3
 thumbnail_image: "/uploads/inkfield-skyrunner-d38d25.jpg"
 video_number: 207168257
 ---
