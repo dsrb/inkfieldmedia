@@ -6,9 +6,9 @@ thumbnail_image: "/uploads/Final%20Frameto%20upload.jpg"
 video_number: 371330393
 ---
 
+Production: Inkfield Media<br>
 Director and DP: Stephen Ribeiro<br>
 Editor & Colourist - David Diley<br>
-Production: Inkfield Media<br>
 Phantom Camera Tech - Lou Murrall<br>
 Camera Assistant - Jacob Kirby<br>
 Client - The English Whisky Co.<br>
